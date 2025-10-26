@@ -1,0 +1,29 @@
+[0.035s] Invoking command in '/home/anatoly/ros2_ws/build/audio_common_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/anatoly/ros2_ws/src/KinectV1-Ros2/src/audio_common/audio_common_msgs -DCMAKE_INSTALL_PREFIX=/home/anatoly/ros2_ws/install/audio_common_msgs
+[0.273s] -- The C compiler identification is GNU 13.3.0
+[0.459s] -- The CXX compiler identification is GNU 13.3.0
+[0.507s] -- Detecting C compiler ABI info
+[0.779s] -- Detecting C compiler ABI info - done
+[0.810s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.812s] -- Detecting C compile features
+[0.813s] -- Detecting C compile features - done
+[0.844s] -- Detecting CXX compiler ABI info
+[1.132s] -- Detecting CXX compiler ABI info - done
+[1.162s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.164s] -- Detecting CXX compile features
+[1.165s] -- Detecting CXX compile features - done
+[1.176s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.738s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.310s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[2.346s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.665s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.826s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[2.846s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[4.970s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[6.802s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.732s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.743s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[9.122s] -- Found PythonExtra: /usr/bin/python3  
+[10.408s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[10.555s] -- Configuring done (10.5s)
+[10.668s] -- Generating done (0.1s)
+[10.707s] -- Build files have been written to: /home/anatoly/ros2_ws/build/audio_common_msgs

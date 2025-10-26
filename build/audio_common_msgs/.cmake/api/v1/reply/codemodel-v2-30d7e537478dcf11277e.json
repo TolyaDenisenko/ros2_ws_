@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-218bb1d524050761bbe5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "audio_common_msgs__py",
+					"jsonFile" : "directory-audio_common_msgs__py-b0ee51a69d2e1b4cc93d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/anatoly/ros2_ws/build/audio_common_msgs/audio_common_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "audio_common_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_audio_common_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_audio_common_msgs_egg-1809db9e17baa6353912.json",
+					"name" : "ament_cmake_python_build_audio_common_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_audio_common_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_audio_common_msgs-cb732791ea969b70dfb4.json",
+					"name" : "ament_cmake_python_copy_audio_common_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs-7e9c24583440cb4129d0.json",
+					"name" : "audio_common_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs__cpp-49f07dbfd9eb3f943919.json",
+					"name" : "audio_common_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "audio_common_msgs__py::@6a191eeb3c27c297554a",
+					"jsonFile" : "target-audio_common_msgs__py-2d15bfe873ae023fd759.json",
+					"name" : "audio_common_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs__rosidl_generator_c-72be89edb384ef77fc81.json",
+					"name" : "audio_common_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs__rosidl_generator_py-bb8ec04d3dbff9f34804.json",
+					"name" : "audio_common_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs__rosidl_generator_type_description-427e0dccca9a54805e46.json",
+					"name" : "audio_common_msgs__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs__rosidl_typesupport_c-b9b5531111d487a6ac5f.json",
+					"name" : "audio_common_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs__rosidl_typesupport_cpp-87c1658bf5534cf86b0c.json",
+					"name" : "audio_common_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs__rosidl_typesupport_fastrtps_c-cf448c3c62f2720c2714.json",
+					"name" : "audio_common_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs__rosidl_typesupport_fastrtps_cpp-9a30e84196712aeefff8.json",
+					"name" : "audio_common_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs__rosidl_typesupport_introspection_c-40aa11efc7a2aaeb59f3.json",
+					"name" : "audio_common_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs__rosidl_typesupport_introspection_cpp-51fffe0ac87d7b4b39ab.json",
+					"name" : "audio_common_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs_s__rosidl_typesupport_c-0a3e3dbca0008b268822.json",
+					"name" : "audio_common_msgs_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs_s__rosidl_typesupport_fastrtps_c-0ec396f7f74657fa3198.json",
+					"name" : "audio_common_msgs_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs_s__rosidl_typesupport_introspection_c-3ca11f1e5847c9f13dac.json",
+					"name" : "audio_common_msgs_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs_uninstall-ef0166afd80fd76bddc8.json",
+					"name" : "audio_common_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-a38e4f14223e3e79ea4b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/anatoly/ros2_ws/build/audio_common_msgs",
+		"source" : "/home/anatoly/ros2_ws/src/KinectV1-Ros2/src/audio_common/audio_common_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

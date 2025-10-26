@@ -1,0 +1,446 @@
+[0.000000] (-) TimerEvent: {}
+[0.001875] (-) JobUnselected: {'identifier': 'micro_ros_setup'}
+[0.002002] (-) JobUnselected: {'identifier': 'my_fake_lidar'}
+[0.002076] (-) JobUnselected: {'identifier': 'my_path_publisher'}
+[0.002134] (-) JobUnselected: {'identifier': 'my_two_wheel_robot'}
+[0.002184] (-) JobUnselected: {'identifier': 'twist_converter'}
+[0.002225] (-) JobUnselected: {'identifier': 'view_robot'}
+[0.002274] (kinect_ros2) JobQueued: {'identifier': 'kinect_ros2', 'dependencies': OrderedDict()}
+[0.002330] (kinect_ros2) JobStarted: {'identifier': 'kinect_ros2'}
+[0.027290] (kinect_ros2) JobProgress: {'identifier': 'kinect_ros2', 'progress': 'cmake'}
+[0.029487] (kinect_ros2) Command: {'cmd': ['/usr/bin/cmake', '/home/anatoly/ros2_ws/src/kinect_ros2', '-DCMAKE_INSTALL_PREFIX=/home/anatoly/ros2_ws/install/kinect_ros2'], 'cwd': '/home/anatoly/ros2_ws/build/kinect_ros2', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'anatoly', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/anatoly', 'OLDPWD': '/home/anatoly', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '4435', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/anatoly/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'anatoly', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'anatoly', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/anatoly-Latitude-3340:@/tmp/.ICE-unix/4215,unix/anatoly-Latitude-3340:/tmp/.ICE-unix/4215', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a4c755b4_4c18_4741_bc2a_9052d580b90f', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.4CUVD3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/anatoly/ros2_ws/install/kinect_ros2:/home/anatoly/ros2_ws/install/view_robot:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_two_wheel_robot:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/home/anatoly/ros2_ws/install/micro_ros_setup:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/anatoly/ros2_ws/build/kinect_ros2', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/anatoly/ros2_ws/install/twist_converter/lib/python3.12/site-packages:/home/anatoly/ros2_ws/install/my_path_publisher/lib/python3.12/site-packages:/home/anatoly/ros2_ws/install/my_fake_lidar/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/anatoly/ros2_ws/install/kinect_ros2:/home/anatoly/ros2_ws/install/view_robot:/home/anatoly/ros2_ws/install/my_two_wheel_robot:/home/anatoly/ros2_ws/install/micro_ros_setup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy'}), 'shell': False}
+[0.101947] (-) TimerEvent: {}
+[0.206478] (-) TimerEvent: {}
+[0.212999] (kinect_ros2) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.309122] (-) TimerEvent: {}
+[0.390380] (kinect_ros2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.409257] (-) TimerEvent: {}
+[0.438285] (kinect_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.509394] (-) TimerEvent: {}
+[0.609802] (-) TimerEvent: {}
+[0.698388] (kinect_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.711448] (-) TimerEvent: {}
+[0.742887] (kinect_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.746557] (kinect_ros2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.748663] (kinect_ros2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.777907] (kinect_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.811648] (-) TimerEvent: {}
+[0.912436] (-) TimerEvent: {}
+[1.014896] (-) TimerEvent: {}
+[1.059350] (kinect_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.085694] (kinect_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.086431] (kinect_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.087950] (kinect_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.099003] (kinect_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.115037] (-) TimerEvent: {}
+[1.216841] (-) TimerEvent: {}
+[1.317224] (-) TimerEvent: {}
+[1.418110] (-) TimerEvent: {}
+[1.518518] (-) TimerEvent: {}
+[1.547190] (kinect_ros2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.618831] (-) TimerEvent: {}
+[1.719286] (-) TimerEvent: {}
+[1.819698] (-) TimerEvent: {}
+[1.920828] (-) TimerEvent: {}
+[1.949836] (kinect_ros2) StdoutLine: {'line': b'-- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[2.021057] (-) TimerEvent: {}
+[2.123914] (-) TimerEvent: {}
+[2.149953] (kinect_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[2.206542] (kinect_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[2.224422] (-) TimerEvent: {}
+[2.278132] (kinect_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.325668] (-) TimerEvent: {}
+[2.352619] (kinect_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.425808] (-) TimerEvent: {}
+[2.526215] (-) TimerEvent: {}
+[2.626619] (-) TimerEvent: {}
+[2.630160] (kinect_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[2.643938] (kinect_ros2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.726795] (-) TimerEvent: {}
+[2.827181] (-) TimerEvent: {}
+[2.897099] (kinect_ros2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[2.927321] (-) TimerEvent: {}
+[2.961303] (kinect_ros2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[3.027494] (-) TimerEvent: {}
+[3.034452] (kinect_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.127650] (-) TimerEvent: {}
+[3.228075] (-) TimerEvent: {}
+[3.294383] (kinect_ros2) StdoutLine: {'line': b'-- Found rclcpp_components: 28.1.12 (/opt/ros/jazzy/share/rclcpp_components/cmake)\n'}
+[3.328356] (-) TimerEvent: {}
+[3.427548] (kinect_ros2) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[3.428464] (-) TimerEvent: {}
+[3.530946] (-) TimerEvent: {}
+[3.632952] (-) TimerEvent: {}
+[3.635806] (kinect_ros2) StdoutLine: {'line': b'-- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)\n'}
+[3.682779] (kinect_ros2) StdoutLine: {'line': b'-- Found image_transport: 5.1.7 (/opt/ros/jazzy/share/image_transport/cmake)\n'}
+[3.733078] (-) TimerEvent: {}
+[3.748451] (kinect_ros2) StdoutLine: {'line': b'-- Found camera_info_manager: 5.1.7 (/opt/ros/jazzy/share/camera_info_manager/cmake)\n'}
+[3.776422] (kinect_ros2) StdoutLine: {'line': b"-- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'\n"}
+[3.833224] (-) TimerEvent: {}
+[3.915092] (kinect_ros2) StdoutLine: {'line': b'-- Found tf2_ros: 0.36.14 (/opt/ros/jazzy/share/tf2_ros/cmake)\n'}
+[3.933367] (-) TimerEvent: {}
+[4.034989] (-) TimerEvent: {}
+[4.135416] (-) TimerEvent: {}
+[4.229149] (kinect_ros2) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") \n'}
+[4.231843] (kinect_ros2) StdoutLine: {'line': b"-- Checking for module 'libfreenect'\n"}
+[4.235550] (-) TimerEvent: {}
+[4.276369] (kinect_ros2) StdoutLine: {'line': b'--   Found libfreenect, version 0.5\n'}
+[4.335747] (-) TimerEvent: {}
+[4.437941] (-) TimerEvent: {}
+[4.538325] (-) TimerEvent: {}
+[4.640971] (-) TimerEvent: {}
+[4.642897] (kinect_ros2) StdoutLine: {'line': b'-- Configuring done (4.6s)\n'}
+[4.684885] (kinect_ros2) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[4.696950] (kinect_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/anatoly/ros2_ws/build/kinect_ros2\n'}
+[4.726476] (kinect_ros2) CommandEnded: {'returncode': 0}
+[4.727818] (kinect_ros2) JobProgress: {'identifier': 'kinect_ros2', 'progress': 'build'}
+[4.729453] (kinect_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/anatoly/ros2_ws/build/kinect_ros2', '--', '-j2', '-l2'], 'cwd': '/home/anatoly/ros2_ws/build/kinect_ros2', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'anatoly', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/anatoly', 'OLDPWD': '/home/anatoly', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '4435', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/anatoly/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'anatoly', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'anatoly', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/anatoly-Latitude-3340:@/tmp/.ICE-unix/4215,unix/anatoly-Latitude-3340:/tmp/.ICE-unix/4215', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a4c755b4_4c18_4741_bc2a_9052d580b90f', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.4CUVD3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/anatoly/ros2_ws/install/kinect_ros2:/home/anatoly/ros2_ws/install/view_robot:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_two_wheel_robot:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/home/anatoly/ros2_ws/install/micro_ros_setup:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/anatoly/ros2_ws/build/kinect_ros2', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/anatoly/ros2_ws/install/twist_converter/lib/python3.12/site-packages:/home/anatoly/ros2_ws/install/my_path_publisher/lib/python3.12/site-packages:/home/anatoly/ros2_ws/install/my_fake_lidar/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/anatoly/ros2_ws/install/kinect_ros2:/home/anatoly/ros2_ws/install/view_robot:/home/anatoly/ros2_ws/install/my_two_wheel_robot:/home/anatoly/ros2_ws/install/micro_ros_setup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy'}), 'shell': False}
+[4.741131] (-) TimerEvent: {}
+[4.841517] (-) TimerEvent: {}
+[4.868270] (kinect_ros2) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/kinect_ros2_component.dir/src/kinect_ros2_component.cpp.o\x1b[0m\n'}
+[4.941668] (-) TimerEvent: {}
+[5.042075] (-) TimerEvent: {}
+[5.142474] (-) TimerEvent: {}
+[5.242888] (-) TimerEvent: {}
+[5.343503] (-) TimerEvent: {}
+[5.445055] (-) TimerEvent: {}
+[5.546933] (-) TimerEvent: {}
+[5.647330] (-) TimerEvent: {}
+[5.747762] (-) TimerEvent: {}
+[5.848167] (-) TimerEvent: {}
+[5.948573] (-) TimerEvent: {}
+[6.048981] (-) TimerEvent: {}
+[6.149376] (-) TimerEvent: {}
+[6.249972] (-) TimerEvent: {}
+[6.353043] (-) TimerEvent: {}
+[6.453436] (-) TimerEvent: {}
+[6.554192] (-) TimerEvent: {}
+[6.657022] (-) TimerEvent: {}
+[6.757435] (-) TimerEvent: {}
+[6.859155] (-) TimerEvent: {}
+[6.959628] (-) TimerEvent: {}
+[7.060080] (-) TimerEvent: {}
+[7.160526] (-) TimerEvent: {}
+[7.260983] (-) TimerEvent: {}
+[7.361406] (-) TimerEvent: {}
+[7.462364] (-) TimerEvent: {}
+[7.562779] (-) TimerEvent: {}
+[7.663168] (-) TimerEvent: {}
+[7.763576] (-) TimerEvent: {}
+[7.863991] (-) TimerEvent: {}
+[7.965361] (-) TimerEvent: {}
+[8.065824] (-) TimerEvent: {}
+[8.166222] (-) TimerEvent: {}
+[8.266610] (-) TimerEvent: {}
+[8.367072] (-) TimerEvent: {}
+[8.469945] (-) TimerEvent: {}
+[8.570555] (-) TimerEvent: {}
+[8.673855] (-) TimerEvent: {}
+[8.774575] (-) TimerEvent: {}
+[8.875018] (-) TimerEvent: {}
+[8.975438] (-) TimerEvent: {}
+[9.075862] (-) TimerEvent: {}
+[9.176265] (-) TimerEvent: {}
+[9.278227] (-) TimerEvent: {}
+[9.378569] (-) TimerEvent: {}
+[9.478987] (-) TimerEvent: {}
+[9.581016] (-) TimerEvent: {}
+[9.681429] (-) TimerEvent: {}
+[9.781833] (-) TimerEvent: {}
+[9.882233] (-) TimerEvent: {}
+[9.982662] (-) TimerEvent: {}
+[10.085039] (-) TimerEvent: {}
+[10.185420] (-) TimerEvent: {}
+[10.287406] (-) TimerEvent: {}
+[10.389945] (-) TimerEvent: {}
+[10.491988] (-) TimerEvent: {}
+[10.592390] (-) TimerEvent: {}
+[10.694803] (-) TimerEvent: {}
+[10.797927] (-) TimerEvent: {}
+[10.900021] (-) TimerEvent: {}
+[11.000653] (-) TimerEvent: {}
+[11.101103] (-) TimerEvent: {}
+[11.203174] (-) TimerEvent: {}
+[11.305935] (-) TimerEvent: {}
+[11.406368] (-) TimerEvent: {}
+[11.506799] (-) TimerEvent: {}
+[11.608425] (-) TimerEvent: {}
+[11.709804] (-) TimerEvent: {}
+[11.810245] (-) TimerEvent: {}
+[11.912315] (-) TimerEvent: {}
+[12.012766] (-) TimerEvent: {}
+[12.113261] (-) TimerEvent: {}
+[12.215944] (-) TimerEvent: {}
+[12.316372] (-) TimerEvent: {}
+[12.419062] (-) TimerEvent: {}
+[12.519484] (-) TimerEvent: {}
+[12.619960] (-) TimerEvent: {}
+[12.723045] (-) TimerEvent: {}
+[12.823477] (-) TimerEvent: {}
+[12.923935] (-) TimerEvent: {}
+[13.024352] (-) TimerEvent: {}
+[13.124788] (-) TimerEvent: {}
+[13.225284] (-) TimerEvent: {}
+[13.327955] (-) TimerEvent: {}
+[13.428890] (-) TimerEvent: {}
+[13.531028] (-) TimerEvent: {}
+[13.631417] (-) TimerEvent: {}
+[13.733986] (-) TimerEvent: {}
+[13.834379] (-) TimerEvent: {}
+[13.934814] (-) TimerEvent: {}
+[14.036944] (-) TimerEvent: {}
+[14.137572] (-) TimerEvent: {}
+[14.238753] (-) TimerEvent: {}
+[14.341085] (-) TimerEvent: {}
+[14.441471] (-) TimerEvent: {}
+[14.542797] (-) TimerEvent: {}
+[14.643236] (-) TimerEvent: {}
+[14.746808] (-) TimerEvent: {}
+[14.847272] (-) TimerEvent: {}
+[14.947722] (-) TimerEvent: {}
+[15.048165] (-) TimerEvent: {}
+[15.148579] (-) TimerEvent: {}
+[15.249015] (-) TimerEvent: {}
+[15.349472] (-) TimerEvent: {}
+[15.449889] (-) TimerEvent: {}
+[15.550323] (-) TimerEvent: {}
+[15.653012] (-) TimerEvent: {}
+[15.753389] (-) TimerEvent: {}
+[15.853894] (-) TimerEvent: {}
+[15.954334] (-) TimerEvent: {}
+[16.054765] (-) TimerEvent: {}
+[16.155191] (-) TimerEvent: {}
+[16.255584] (-) TimerEvent: {}
+[16.356021] (-) TimerEvent: {}
+[16.456432] (-) TimerEvent: {}
+[16.556857] (-) TimerEvent: {}
+[16.657259] (-) TimerEvent: {}
+[16.757667] (-) TimerEvent: {}
+[16.858802] (-) TimerEvent: {}
+[16.959223] (-) TimerEvent: {}
+[17.060805] (-) TimerEvent: {}
+[17.161229] (-) TimerEvent: {}
+[17.261615] (-) TimerEvent: {}
+[17.362035] (-) TimerEvent: {}
+[17.462444] (-) TimerEvent: {}
+[17.564950] (-) TimerEvent: {}
+[17.666804] (-) TimerEvent: {}
+[17.767204] (-) TimerEvent: {}
+[17.869454] (-) TimerEvent: {}
+[17.969877] (-) TimerEvent: {}
+[18.070278] (-) TimerEvent: {}
+[18.170704] (-) TimerEvent: {}
+[18.271179] (-) TimerEvent: {}
+[18.374052] (-) TimerEvent: {}
+[18.474446] (-) TimerEvent: {}
+[18.574863] (-) TimerEvent: {}
+[18.675282] (-) TimerEvent: {}
+[18.775695] (-) TimerEvent: {}
+[18.876115] (-) TimerEvent: {}
+[18.976538] (-) TimerEvent: {}
+[19.077160] (-) TimerEvent: {}
+[19.180029] (-) TimerEvent: {}
+[19.280441] (-) TimerEvent: {}
+[19.380814] (-) TimerEvent: {}
+[19.481211] (-) TimerEvent: {}
+[19.583947] (-) TimerEvent: {}
+[19.684359] (-) TimerEvent: {}
+[19.784795] (-) TimerEvent: {}
+[19.887992] (-) TimerEvent: {}
+[19.988399] (-) TimerEvent: {}
+[20.088822] (-) TimerEvent: {}
+[20.190940] (-) TimerEvent: {}
+[20.291370] (-) TimerEvent: {}
+[20.391794] (-) TimerEvent: {}
+[20.492192] (-) TimerEvent: {}
+[20.592599] (-) TimerEvent: {}
+[20.693011] (-) TimerEvent: {}
+[20.793671] (-) TimerEvent: {}
+[20.895932] (-) TimerEvent: {}
+[20.996326] (-) TimerEvent: {}
+[21.098950] (-) TimerEvent: {}
+[21.199365] (-) TimerEvent: {}
+[21.299896] (-) TimerEvent: {}
+[21.402023] (-) TimerEvent: {}
+[21.502523] (-) TimerEvent: {}
+[21.605049] (-) TimerEvent: {}
+[21.705804] (-) TimerEvent: {}
+[21.806228] (-) TimerEvent: {}
+[21.906637] (-) TimerEvent: {}
+[22.007783] (-) TimerEvent: {}
+[22.108211] (-) TimerEvent: {}
+[22.208668] (-) TimerEvent: {}
+[22.309100] (-) TimerEvent: {}
+[22.409555] (-) TimerEvent: {}
+[22.511234] (-) TimerEvent: {}
+[22.611804] (-) TimerEvent: {}
+[22.714025] (-) TimerEvent: {}
+[22.814452] (-) TimerEvent: {}
+[22.914830] (-) TimerEvent: {}
+[23.015230] (-) TimerEvent: {}
+[23.115650] (-) TimerEvent: {}
+[23.216100] (-) TimerEvent: {}
+[23.316477] (-) TimerEvent: {}
+[23.416915] (-) TimerEvent: {}
+[23.517331] (-) TimerEvent: {}
+[23.617754] (-) TimerEvent: {}
+[23.718175] (-) TimerEvent: {}
+[23.818586] (-) TimerEvent: {}
+[23.919006] (-) TimerEvent: {}
+[24.019402] (-) TimerEvent: {}
+[24.122023] (-) TimerEvent: {}
+[24.223954] (-) TimerEvent: {}
+[24.324382] (-) TimerEvent: {}
+[24.424806] (-) TimerEvent: {}
+[24.525937] (-) TimerEvent: {}
+[24.626815] (-) TimerEvent: {}
+[24.727916] (-) TimerEvent: {}
+[24.828305] (-) TimerEvent: {}
+[24.930609] (-) TimerEvent: {}
+[25.033084] (-) TimerEvent: {}
+[25.136393] (-) TimerEvent: {}
+[25.239027] (-) TimerEvent: {}
+[25.340815] (-) TimerEvent: {}
+[25.441266] (-) TimerEvent: {}
+[25.543578] (-) TimerEvent: {}
+[25.644151] (-) TimerEvent: {}
+[25.744552] (-) TimerEvent: {}
+[25.844950] (-) TimerEvent: {}
+[25.946960] (-) TimerEvent: {}
+[26.047347] (-) TimerEvent: {}
+[26.147780] (-) TimerEvent: {}
+[26.248181] (-) TimerEvent: {}
+[26.348592] (-) TimerEvent: {}
+[26.449025] (-) TimerEvent: {}
+[26.549437] (-) TimerEvent: {}
+[26.649859] (-) TimerEvent: {}
+[26.750371] (-) TimerEvent: {}
+[26.850797] (-) TimerEvent: {}
+[26.951218] (-) TimerEvent: {}
+[27.051626] (-) TimerEvent: {}
+[27.152063] (-) TimerEvent: {}
+[27.255100] (-) TimerEvent: {}
+[27.355506] (-) TimerEvent: {}
+[27.455904] (-) TimerEvent: {}
+[27.556309] (-) TimerEvent: {}
+[27.658951] (-) TimerEvent: {}
+[27.759354] (-) TimerEvent: {}
+[27.859825] (-) TimerEvent: {}
+[27.960213] (-) TimerEvent: {}
+[28.060786] (-) TimerEvent: {}
+[28.162572] (-) TimerEvent: {}
+[28.263058] (-) TimerEvent: {}
+[28.363463] (-) TimerEvent: {}
+[28.463830] (-) TimerEvent: {}
+[28.564205] (-) TimerEvent: {}
+[28.664615] (-) TimerEvent: {}
+[28.765036] (-) TimerEvent: {}
+[28.865464] (-) TimerEvent: {}
+[28.965899] (-) TimerEvent: {}
+[29.066292] (-) TimerEvent: {}
+[29.166725] (-) TimerEvent: {}
+[29.267141] (-) TimerEvent: {}
+[29.367550] (-) TimerEvent: {}
+[29.467986] (-) TimerEvent: {}
+[29.568392] (-) TimerEvent: {}
+[29.668808] (-) TimerEvent: {}
+[29.771012] (-) TimerEvent: {}
+[29.872986] (-) TimerEvent: {}
+[29.973384] (-) TimerEvent: {}
+[30.073805] (-) TimerEvent: {}
+[30.174285] (-) TimerEvent: {}
+[30.274695] (-) TimerEvent: {}
+[30.375122] (-) TimerEvent: {}
+[30.477094] (-) TimerEvent: {}
+[30.577506] (-) TimerEvent: {}
+[30.679781] (-) TimerEvent: {}
+[30.780184] (-) TimerEvent: {}
+[30.880593] (-) TimerEvent: {}
+[30.981013] (-) TimerEvent: {}
+[31.081423] (-) TimerEvent: {}
+[31.184046] (-) TimerEvent: {}
+[31.284436] (-) TimerEvent: {}
+[31.386960] (-) TimerEvent: {}
+[31.487368] (-) TimerEvent: {}
+[31.589953] (-) TimerEvent: {}
+[31.691966] (-) TimerEvent: {}
+[31.792403] (-) TimerEvent: {}
+[31.892827] (-) TimerEvent: {}
+[31.995022] (-) TimerEvent: {}
+[32.095431] (-) TimerEvent: {}
+[32.197951] (-) TimerEvent: {}
+[32.298351] (-) TimerEvent: {}
+[32.398800] (-) TimerEvent: {}
+[32.499873] (-) TimerEvent: {}
+[32.600267] (-) TimerEvent: {}
+[32.700687] (-) TimerEvent: {}
+[32.801252] (-) TimerEvent: {}
+[32.903052] (-) TimerEvent: {}
+[33.003474] (-) TimerEvent: {}
+[33.103935] (-) TimerEvent: {}
+[33.204331] (-) TimerEvent: {}
+[33.304777] (-) TimerEvent: {}
+[33.405180] (-) TimerEvent: {}
+[33.505601] (-) TimerEvent: {}
+[33.606029] (-) TimerEvent: {}
+[33.706433] (-) TimerEvent: {}
+[33.806823] (-) TimerEvent: {}
+[33.908958] (-) TimerEvent: {}
+[34.011070] (-) TimerEvent: {}
+[34.111462] (-) TimerEvent: {}
+[34.211823] (-) TimerEvent: {}
+[34.312216] (-) TimerEvent: {}
+[34.412620] (-) TimerEvent: {}
+[34.513054] (-) TimerEvent: {}
+[34.613473] (-) TimerEvent: {}
+[34.713891] (-) TimerEvent: {}
+[34.814337] (-) TimerEvent: {}
+[34.917053] (-) TimerEvent: {}
+[35.017452] (-) TimerEvent: {}
+[35.117876] (-) TimerEvent: {}
+[35.218311] (-) TimerEvent: {}
+[35.280077] (kinect_ros2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libkinect_ros2_component.so\x1b[0m\n'}
+[35.318799] (-) TimerEvent: {}
+[35.419213] (-) TimerEvent: {}
+[35.519734] (-) TimerEvent: {}
+[35.622795] (-) TimerEvent: {}
+[35.725163] (-) TimerEvent: {}
+[35.825645] (-) TimerEvent: {}
+[35.926953] (-) TimerEvent: {}
+[36.028208] (-) TimerEvent: {}
+[36.128648] (-) TimerEvent: {}
+[36.229150] (-) TimerEvent: {}
+[36.329566] (-) TimerEvent: {}
+[36.431999] (-) TimerEvent: {}
+[36.500815] (kinect_ros2) StdoutLine: {'line': b'[100%] Built target kinect_ros2_component\n'}
+[36.528286] (kinect_ros2) CommandEnded: {'returncode': 0}
+[36.529624] (kinect_ros2) JobProgress: {'identifier': 'kinect_ros2', 'progress': 'install'}
+[36.532124] (-) TimerEvent: {}
+[36.557153] (kinect_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/anatoly/ros2_ws/build/kinect_ros2'], 'cwd': '/home/anatoly/ros2_ws/build/kinect_ros2', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'anatoly', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/anatoly', 'OLDPWD': '/home/anatoly', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '4435', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/anatoly/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'anatoly', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'anatoly', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/anatoly-Latitude-3340:@/tmp/.ICE-unix/4215,unix/anatoly-Latitude-3340:/tmp/.ICE-unix/4215', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a4c755b4_4c18_4741_bc2a_9052d580b90f', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.4CUVD3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/anatoly/ros2_ws/install/kinect_ros2:/home/anatoly/ros2_ws/install/view_robot:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_two_wheel_robot:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/home/anatoly/ros2_ws/install/micro_ros_setup:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/anatoly/ros2_ws/build/kinect_ros2', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/anatoly/ros2_ws/install/twist_converter/lib/python3.12/site-packages:/home/anatoly/ros2_ws/install/my_path_publisher/lib/python3.12/site-packages:/home/anatoly/ros2_ws/install/my_fake_lidar/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/anatoly/ros2_ws/install/kinect_ros2:/home/anatoly/ros2_ws/install/view_robot:/home/anatoly/ros2_ws/install/my_two_wheel_robot:/home/anatoly/ros2_ws/install/micro_ros_setup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy'}), 'shell': False}
+[36.578104] (kinect_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[36.578556] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/lib/kinect_ros2/libkinect_ros2_component.so\n'}
+[36.589361] (kinect_ros2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/anatoly/ros2_ws/install/kinect_ros2/lib/kinect_ros2/libkinect_ros2_component.so" to ""\n'}
+[36.589833] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/launch\n'}
+[36.590230] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/launch/pointcloud.launch.py\n'}
+[36.590512] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/launch/showimage.launch.py\n'}
+[36.590863] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/launch/kinect.launch.py\n'}
+[36.591117] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/ament_index/resource_index/package_run_dependencies/kinect_ros2\n'}
+[36.591394] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/ament_index/resource_index/parent_prefix_path/kinect_ros2\n'}
+[36.591704] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/environment/ament_prefix_path.sh\n'}
+[36.592036] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/environment/ament_prefix_path.dsv\n'}
+[36.592330] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/environment/path.sh\n'}
+[36.594776] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/environment/path.dsv\n'}
+[36.595547] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/local_setup.bash\n'}
+[36.596405] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/local_setup.sh\n'}
+[36.596680] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/local_setup.zsh\n'}
+[36.598117] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/local_setup.dsv\n'}
+[36.598333] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/package.dsv\n'}
+[36.598515] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/ament_index/resource_index/packages/kinect_ros2\n'}
+[36.598690] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/ament_index/resource_index/rclcpp_components/kinect_ros2\n'}
+[36.601638] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/cmake/kinect_ros2Config.cmake\n'}
+[36.602752] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/cmake/kinect_ros2Config-version.cmake\n'}
+[36.602977] (kinect_ros2) StdoutLine: {'line': b'-- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/package.xml\n'}
+[36.603161] (kinect_ros2) CommandEnded: {'returncode': 0}
+[36.632922] (-) TimerEvent: {}
+[36.647123] (kinect_ros2) JobEnded: {'identifier': 'kinect_ros2', 'rc': 0}
+[36.648624] (-) EventReactorShutdown: {}

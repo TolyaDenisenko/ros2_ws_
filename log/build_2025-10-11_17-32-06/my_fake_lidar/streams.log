@@ -1,0 +1,21 @@
+[4.006s] Invoking command in '/home/anatoly/ros2_ws/src/my_fake_lidar': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/anatoly/ros2_ws/build/my_fake_lidar/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anatoly/ros2_ws/install/my_fake_lidar/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_fake_lidar build --build-base /home/anatoly/ros2_ws/build/my_fake_lidar/build install --record /home/anatoly/ros2_ws/build/my_fake_lidar/install.log --single-version-externally-managed install_data
+[5.093s] running egg_info
+[5.173s] writing ../../build/my_fake_lidar/my_fake_lidar.egg-info/PKG-INFO
+[5.176s] writing dependency_links to ../../build/my_fake_lidar/my_fake_lidar.egg-info/dependency_links.txt
+[5.178s] writing entry points to ../../build/my_fake_lidar/my_fake_lidar.egg-info/entry_points.txt
+[5.180s] writing requirements to ../../build/my_fake_lidar/my_fake_lidar.egg-info/requires.txt
+[5.183s] writing top-level names to ../../build/my_fake_lidar/my_fake_lidar.egg-info/top_level.txt
+[5.344s] reading manifest file '../../build/my_fake_lidar/my_fake_lidar.egg-info/SOURCES.txt'
+[5.348s] writing manifest file '../../build/my_fake_lidar/my_fake_lidar.egg-info/SOURCES.txt'
+[5.350s] running build
+[5.353s] running build_py
+[5.353s] running install
+[5.375s] running install_lib
+[5.457s] running install_data
+[5.459s] running install_egg_info
+[5.545s] removing '/home/anatoly/ros2_ws/install/my_fake_lidar/lib/python3.12/site-packages/my_fake_lidar-0.0.0-py3.12.egg-info' (and everything under it)
+[5.551s] Copying ../../build/my_fake_lidar/my_fake_lidar.egg-info to /home/anatoly/ros2_ws/install/my_fake_lidar/lib/python3.12/site-packages/my_fake_lidar-0.0.0-py3.12.egg-info
+[5.557s] running install_scripts
+[6.038s] Installing fake_lidar script to /home/anatoly/ros2_ws/install/my_fake_lidar/lib/my_fake_lidar
+[6.041s] writing list of installed files to '/home/anatoly/ros2_ws/build/my_fake_lidar/install.log'
+[6.168s] Invoked command in '/home/anatoly/ros2_ws/src/my_fake_lidar' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/anatoly/ros2_ws/build/my_fake_lidar/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anatoly/ros2_ws/install/my_fake_lidar/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_fake_lidar build --build-base /home/anatoly/ros2_ws/build/my_fake_lidar/build install --record /home/anatoly/ros2_ws/build/my_fake_lidar/install.log --single-version-externally-managed install_data

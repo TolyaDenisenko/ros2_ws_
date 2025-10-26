@@ -1,0 +1,27 @@
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_components: 28.1.12 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+-- Found image_transport: 5.1.7 (/opt/ros/jazzy/share/image_transport/cmake)
+-- Found camera_info_manager: 5.1.7 (/opt/ros/jazzy/share/camera_info_manager/cmake)
+-- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+-- Found tf2_ros: 0.36.14 (/opt/ros/jazzy/share/tf2_ros/cmake)
+-- Configuring done (2.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/anatoly/ros2_ws/build/kinect_ros2
+[ 50%] [32mBuilding CXX object CMakeFiles/kinect_ros2_component.dir/src/kinect_ros2_component.cpp.o[0m
+[01m[K/home/anatoly/ros2_ws/src/kinect_ros2/src/kinect_ros2_component.cpp:221:10:[m[K [01;31m[Kfatal error: [m[Krclcpp_components/register_node_macro.hpp: No such file or directory
+  221 | #include [01;31m[K"rclcpp_components/register_node_macro.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/kinect_ros2_component.dir/build.make:76: CMakeFiles/kinect_ros2_component.dir/src/kinect_ros2_component.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/kinect_ros2_component.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

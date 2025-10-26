@@ -1,0 +1,34 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from audio_common_msgs/msg/AudioInfo.msg
+// generated code does not contain a copyright notice
+
+
+module audio_common_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "This message contains the audio meta data")
+    struct AudioInfo {
+      @verbatim (language="comment", text=
+        "Number of channels")
+      uint8 channels;
+
+      @verbatim (language="comment", text=
+        "Sampling rate")
+      @unit (value="Hz")
+      uint32 sample_rate;
+
+      @verbatim (language="comment", text=
+        "Audio format (e.g. S16LE)")
+      string sample_format;
+
+      @verbatim (language="comment", text=
+        "Amount of audio data per second")
+      @unit (value="bits/s")
+      uint32 bitrate;
+
+      @verbatim (language="comment", text=
+        "Audio coding format (e.g. WAVE, MP3)")
+      string coding_format;
+    };
+  };
+};

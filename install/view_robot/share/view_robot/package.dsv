@@ -1,0 +1,8 @@
+source;share/view_robot/hook/cmake_prefix_path.ps1
+source;share/view_robot/hook/cmake_prefix_path.dsv
+source;share/view_robot/hook/cmake_prefix_path.sh
+source;share/view_robot/local_setup.bash
+source;share/view_robot/local_setup.dsv
+source;share/view_robot/local_setup.ps1
+source;share/view_robot/local_setup.sh
+source;share/view_robot/local_setup.zsh

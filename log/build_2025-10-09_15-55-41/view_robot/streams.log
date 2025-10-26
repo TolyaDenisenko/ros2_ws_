@@ -1,0 +1,27 @@
+[0.035s] Invoking command in '/home/anatoly/ros2_ws/build/view_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/home/anatoly/ros2_ws/install/esp32_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/anatoly/ros2_ws/build/view_robot -- -j2 -l2
+[0.144s] Invoked command in '/home/anatoly/ros2_ws/build/view_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/home/anatoly/ros2_ws/install/esp32_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/anatoly/ros2_ws/build/view_robot -- -j2 -l2
+[0.147s] Invoking command in '/home/anatoly/ros2_ws/build/view_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/home/anatoly/ros2_ws/install/esp32_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/anatoly/ros2_ws/build/view_robot
+[0.176s] -- Install configuration: ""
+[0.180s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/launch
+[0.180s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/launch/view_robot.launch.py
+[0.180s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/urdf
+[0.180s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/urdf/view_robot.urdf.xacro
+[0.181s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/config
+[0.181s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/rviz
+[0.185s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/rviz/urdf.rviz
+[0.185s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/ament_index/resource_index/package_run_dependencies/view_robot
+[0.186s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/ament_index/resource_index/parent_prefix_path/view_robot
+[0.186s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/environment/ament_prefix_path.sh
+[0.186s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/environment/ament_prefix_path.dsv
+[0.190s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/environment/path.sh
+[0.192s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/environment/path.dsv
+[0.192s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/local_setup.bash
+[0.192s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/local_setup.sh
+[0.193s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/local_setup.zsh
+[0.193s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/local_setup.dsv
+[0.193s] -- Installing: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/package.dsv
+[0.193s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/ament_index/resource_index/packages/view_robot
+[0.193s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/cmake/view_robotConfig.cmake
+[0.194s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/cmake/view_robotConfig-version.cmake
+[0.197s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/package.xml
+[0.202s] Invoked command in '/home/anatoly/ros2_ws/build/view_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/home/anatoly/ros2_ws/install/esp32_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/anatoly/ros2_ws/build/view_robot

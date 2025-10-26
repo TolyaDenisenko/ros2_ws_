@@ -1,0 +1,21 @@
+[5.645s] Invoking command in '/home/anatoly/ros2_ws/src/twist_converter': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/anatoly/ros2_ws/build/twist_converter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anatoly/ros2_ws/install/twist_converter/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/twist_converter build --build-base /home/anatoly/ros2_ws/build/twist_converter/build install --record /home/anatoly/ros2_ws/build/twist_converter/install.log --single-version-externally-managed install_data
+[8.762s] running egg_info
+[8.846s] writing ../../build/twist_converter/twist_converter.egg-info/PKG-INFO
+[8.848s] writing dependency_links to ../../build/twist_converter/twist_converter.egg-info/dependency_links.txt
+[8.849s] writing entry points to ../../build/twist_converter/twist_converter.egg-info/entry_points.txt
+[8.851s] writing requirements to ../../build/twist_converter/twist_converter.egg-info/requires.txt
+[8.852s] writing top-level names to ../../build/twist_converter/twist_converter.egg-info/top_level.txt
+[9.058s] reading manifest file '../../build/twist_converter/twist_converter.egg-info/SOURCES.txt'
+[9.080s] writing manifest file '../../build/twist_converter/twist_converter.egg-info/SOURCES.txt'
+[9.092s] running build
+[9.093s] running build_py
+[9.093s] running install
+[9.131s] running install_lib
+[9.366s] running install_data
+[9.374s] running install_egg_info
+[9.577s] removing '/home/anatoly/ros2_ws/install/twist_converter/lib/python3.12/site-packages/twist_converter-0.0.0-py3.12.egg-info' (and everything under it)
+[9.581s] Copying ../../build/twist_converter/twist_converter.egg-info to /home/anatoly/ros2_ws/install/twist_converter/lib/python3.12/site-packages/twist_converter-0.0.0-py3.12.egg-info
+[9.589s] running install_scripts
+[10.077s] Installing twist_to_twist_stamped script to /home/anatoly/ros2_ws/install/twist_converter/lib/twist_converter
+[10.079s] writing list of installed files to '/home/anatoly/ros2_ws/build/twist_converter/install.log'
+[10.164s] Invoked command in '/home/anatoly/ros2_ws/src/twist_converter' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/anatoly/ros2_ws/build/twist_converter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anatoly/ros2_ws/install/twist_converter/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/twist_converter build --build-base /home/anatoly/ros2_ws/build/twist_converter/build install --record /home/anatoly/ros2_ws/build/twist_converter/install.log --single-version-externally-managed install_data

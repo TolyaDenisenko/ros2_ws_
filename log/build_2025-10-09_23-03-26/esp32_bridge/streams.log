@@ -1,0 +1,24 @@
+[4.494s] Invoking command in '/home/anatoly/ros2_ws/src/esp32_bridge': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/anatoly/ros2_ws/build/esp32_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anatoly/ros2_ws/install/esp32_bridge/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/esp32_bridge build --build-base /home/anatoly/ros2_ws/build/esp32_bridge/build install --record /home/anatoly/ros2_ws/build/esp32_bridge/install.log --single-version-externally-managed install_data
+[7.073s] running egg_info
+[7.175s] writing ../../build/esp32_bridge/esp32_bridge.egg-info/PKG-INFO
+[7.178s] writing dependency_links to ../../build/esp32_bridge/esp32_bridge.egg-info/dependency_links.txt
+[7.180s] writing entry points to ../../build/esp32_bridge/esp32_bridge.egg-info/entry_points.txt
+[7.184s] writing requirements to ../../build/esp32_bridge/esp32_bridge.egg-info/requires.txt
+[7.184s] writing top-level names to ../../build/esp32_bridge/esp32_bridge.egg-info/top_level.txt
+[7.416s] reading manifest file '../../build/esp32_bridge/esp32_bridge.egg-info/SOURCES.txt'
+[7.421s] writing manifest file '../../build/esp32_bridge/esp32_bridge.egg-info/SOURCES.txt'
+[7.422s] running build
+[7.424s] running build_py
+[7.427s] copying esp32_bridge/bridge_node.py -> /home/anatoly/ros2_ws/build/esp32_bridge/build/lib/esp32_bridge
+[7.428s] running install
+[7.482s] running install_lib
+[7.593s] copying /home/anatoly/ros2_ws/build/esp32_bridge/build/lib/esp32_bridge/bridge_node.py -> /home/anatoly/ros2_ws/install/esp32_bridge/lib/python3.12/site-packages/esp32_bridge
+[7.597s] byte-compiling /home/anatoly/ros2_ws/install/esp32_bridge/lib/python3.12/site-packages/esp32_bridge/bridge_node.py to bridge_node.cpython-312.pyc
+[7.608s] running install_data
+[7.608s] running install_egg_info
+[7.744s] removing '/home/anatoly/ros2_ws/install/esp32_bridge/lib/python3.12/site-packages/esp32_bridge-0.0.0-py3.12.egg-info' (and everything under it)
+[7.753s] Copying ../../build/esp32_bridge/esp32_bridge.egg-info to /home/anatoly/ros2_ws/install/esp32_bridge/lib/python3.12/site-packages/esp32_bridge-0.0.0-py3.12.egg-info
+[7.763s] running install_scripts
+[8.383s] Installing esp32_bridge script to /home/anatoly/ros2_ws/install/esp32_bridge/lib/esp32_bridge
+[8.383s] writing list of installed files to '/home/anatoly/ros2_ws/build/esp32_bridge/install.log'
+[8.529s] Invoked command in '/home/anatoly/ros2_ws/src/esp32_bridge' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/anatoly/ros2_ws/build/esp32_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anatoly/ros2_ws/install/esp32_bridge/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/esp32_bridge build --build-base /home/anatoly/ros2_ws/build/esp32_bridge/build install --record /home/anatoly/ros2_ws/build/esp32_bridge/install.log --single-version-externally-managed install_data

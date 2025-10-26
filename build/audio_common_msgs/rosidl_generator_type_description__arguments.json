@@ -1,0 +1,13 @@
+{
+  "package_name": "audio_common_msgs",
+  "output_dir": "/home/anatoly/ros2_ws/build/audio_common_msgs/rosidl_generator_type_description/audio_common_msgs",
+  "idl_tuples": [
+    "/home/anatoly/ros2_ws/build/audio_common_msgs/rosidl_adapter/audio_common_msgs:msg/AudioData.idl",
+    "/home/anatoly/ros2_ws/build/audio_common_msgs/rosidl_adapter/audio_common_msgs:msg/AudioDataStamped.idl",
+    "/home/anatoly/ros2_ws/build/audio_common_msgs/rosidl_adapter/audio_common_msgs:msg/AudioInfo.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces"
+  ]
+}

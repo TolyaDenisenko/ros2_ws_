@@ -1,0 +1,27 @@
+[0.026s] Invoking command in '/home/anatoly/ros2_ws/build/view_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/anatoly/ros2_ws/build/view_robot -- -j2 -l2
+[0.166s] Invoked command in '/home/anatoly/ros2_ws/build/view_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/anatoly/ros2_ws/build/view_robot -- -j2 -l2
+[0.170s] Invoking command in '/home/anatoly/ros2_ws/build/view_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/anatoly/ros2_ws/build/view_robot
+[0.196s] -- Install configuration: ""
+[0.197s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/launch
+[0.200s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/launch/view_robot.launch.py
+[0.201s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/urdf
+[0.202s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/urdf/view_robot.urdf.xacro
+[0.202s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/config
+[0.203s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/rviz
+[0.203s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/rviz/urdf.rviz
+[0.205s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/ament_index/resource_index/package_run_dependencies/view_robot
+[0.207s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/ament_index/resource_index/parent_prefix_path/view_robot
+[0.207s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/environment/ament_prefix_path.sh
+[0.207s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/environment/ament_prefix_path.dsv
+[0.209s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/environment/path.sh
+[0.209s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/environment/path.dsv
+[0.212s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/local_setup.bash
+[0.212s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/local_setup.sh
+[0.213s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/local_setup.zsh
+[0.213s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/local_setup.dsv
+[0.213s] -- Installing: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/package.dsv
+[0.216s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/ament_index/resource_index/packages/view_robot
+[0.216s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/cmake/view_robotConfig.cmake
+[0.216s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/cmake/view_robotConfig-version.cmake
+[0.218s] -- Up-to-date: /home/anatoly/ros2_ws/install/view_robot/share/view_robot/package.xml
+[0.220s] Invoked command in '/home/anatoly/ros2_ws/build/view_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/anatoly/ros2_ws/build/view_robot

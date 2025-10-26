@@ -1,0 +1,415 @@
+[0.311s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.312s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f1cc25a0980>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f1cc26cc860>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f1cc26cc860>>, mixin_verb=('build',))
+[0.418s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.418s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.418s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.419s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.419s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.419s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.419s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/anatoly/ros2_ws'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extensions ['ignore', 'ignore_ament_install']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extension 'ignore'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extension 'ignore_ament_install'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extensions ['colcon_pkg']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extension 'colcon_pkg'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extensions ['colcon_meta']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extension 'colcon_meta'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extensions ['ros']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extension 'ros'
+[0.504s] DEBUG:colcon.colcon_core.package_identification:Package 'src/micro_ros_setup' with type 'ros.ament_cmake' and name 'micro_ros_setup'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_fake_lidar) by extensions ['ignore', 'ignore_ament_install']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_fake_lidar) by extension 'ignore'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_fake_lidar) by extension 'ignore_ament_install'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_fake_lidar) by extensions ['colcon_pkg']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_fake_lidar) by extension 'colcon_pkg'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_fake_lidar) by extensions ['colcon_meta']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_fake_lidar) by extension 'colcon_meta'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_fake_lidar) by extensions ['ros']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_fake_lidar) by extension 'ros'
+[0.506s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_fake_lidar' with type 'ros.ament_python' and name 'my_fake_lidar'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_path_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_path_publisher) by extension 'ignore'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_path_publisher) by extension 'ignore_ament_install'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_path_publisher) by extensions ['colcon_pkg']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_path_publisher) by extension 'colcon_pkg'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_path_publisher) by extensions ['colcon_meta']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_path_publisher) by extension 'colcon_meta'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_path_publisher) by extensions ['ros']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_path_publisher) by extension 'ros'
+[0.509s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_path_publisher' with type 'ros.ament_python' and name 'my_path_publisher'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_two_wheel_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_two_wheel_robot) by extension 'ignore'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_two_wheel_robot) by extension 'ignore_ament_install'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_two_wheel_robot) by extensions ['colcon_pkg']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_two_wheel_robot) by extension 'colcon_pkg'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_two_wheel_robot) by extensions ['colcon_meta']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_two_wheel_robot) by extension 'colcon_meta'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_two_wheel_robot) by extensions ['ros']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_two_wheel_robot) by extension 'ros'
+[0.512s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_two_wheel_robot' with type 'ros.ament_cmake' and name 'my_two_wheel_robot'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_converter) by extensions ['ignore', 'ignore_ament_install']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_converter) by extension 'ignore'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_converter) by extension 'ignore_ament_install'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_converter) by extensions ['colcon_pkg']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_converter) by extension 'colcon_pkg'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_converter) by extensions ['colcon_meta']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_converter) by extension 'colcon_meta'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_converter) by extensions ['ros']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/twist_converter) by extension 'ros'
+[0.515s] DEBUG:colcon.colcon_core.package_identification:Package 'src/twist_converter' with type 'ros.ament_python' and name 'twist_converter'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/view_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/view_robot) by extension 'ignore'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/view_robot) by extension 'ignore_ament_install'
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(src/view_robot) by extensions ['colcon_pkg']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/view_robot) by extension 'colcon_pkg'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/view_robot) by extensions ['colcon_meta']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/view_robot) by extension 'colcon_meta'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/view_robot) by extensions ['ros']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(src/view_robot) by extension 'ros'
+[0.517s] DEBUG:colcon.colcon_core.package_identification:Package 'src/view_robot' with type 'ros.ament_cmake' and name 'view_robot'
+[0.517s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.518s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.518s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.518s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.518s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.568s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.568s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.574s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/anatoly/ros2_ws/install
+[0.579s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 373 installed packages in /opt/ros/jazzy
+[0.584s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.747s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_args' from command line to 'None'
+[0.747s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_target' from command line to 'None'
+[0.747s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.748s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.748s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_clean_first' from command line to 'False'
+[0.748s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_force_configure' from command line to 'False'
+[0.748s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'ament_cmake_args' from command line to 'None'
+[0.748s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.748s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.748s] DEBUG:colcon.colcon_core.verb:Building package 'micro_ros_setup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anatoly/ros2_ws/build/micro_ros_setup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anatoly/ros2_ws/install/micro_ros_setup', 'merge_install': False, 'path': '/home/anatoly/ros2_ws/src/micro_ros_setup', 'symlink_install': False, 'test_result_base': None}
+[0.749s] Level 5:colcon.colcon_core.verb:set package 'my_fake_lidar' build argument 'cmake_args' from command line to 'None'
+[0.749s] Level 5:colcon.colcon_core.verb:set package 'my_fake_lidar' build argument 'cmake_target' from command line to 'None'
+[0.749s] Level 5:colcon.colcon_core.verb:set package 'my_fake_lidar' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.749s] Level 5:colcon.colcon_core.verb:set package 'my_fake_lidar' build argument 'cmake_clean_cache' from command line to 'False'
+[0.749s] Level 5:colcon.colcon_core.verb:set package 'my_fake_lidar' build argument 'cmake_clean_first' from command line to 'False'
+[0.749s] Level 5:colcon.colcon_core.verb:set package 'my_fake_lidar' build argument 'cmake_force_configure' from command line to 'False'
+[0.749s] Level 5:colcon.colcon_core.verb:set package 'my_fake_lidar' build argument 'ament_cmake_args' from command line to 'None'
+[0.749s] Level 5:colcon.colcon_core.verb:set package 'my_fake_lidar' build argument 'catkin_cmake_args' from command line to 'None'
+[0.749s] Level 5:colcon.colcon_core.verb:set package 'my_fake_lidar' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.749s] DEBUG:colcon.colcon_core.verb:Building package 'my_fake_lidar' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anatoly/ros2_ws/build/my_fake_lidar', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anatoly/ros2_ws/install/my_fake_lidar', 'merge_install': False, 'path': '/home/anatoly/ros2_ws/src/my_fake_lidar', 'symlink_install': False, 'test_result_base': None}
+[0.750s] Level 5:colcon.colcon_core.verb:set package 'my_path_publisher' build argument 'cmake_args' from command line to 'None'
+[0.750s] Level 5:colcon.colcon_core.verb:set package 'my_path_publisher' build argument 'cmake_target' from command line to 'None'
+[0.750s] Level 5:colcon.colcon_core.verb:set package 'my_path_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.750s] Level 5:colcon.colcon_core.verb:set package 'my_path_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.751s] Level 5:colcon.colcon_core.verb:set package 'my_path_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.751s] Level 5:colcon.colcon_core.verb:set package 'my_path_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.751s] Level 5:colcon.colcon_core.verb:set package 'my_path_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.751s] Level 5:colcon.colcon_core.verb:set package 'my_path_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.751s] Level 5:colcon.colcon_core.verb:set package 'my_path_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.751s] DEBUG:colcon.colcon_core.verb:Building package 'my_path_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anatoly/ros2_ws/build/my_path_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anatoly/ros2_ws/install/my_path_publisher', 'merge_install': False, 'path': '/home/anatoly/ros2_ws/src/my_path_publisher', 'symlink_install': False, 'test_result_base': None}
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'my_two_wheel_robot' build argument 'cmake_args' from command line to 'None'
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'my_two_wheel_robot' build argument 'cmake_target' from command line to 'None'
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'my_two_wheel_robot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'my_two_wheel_robot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'my_two_wheel_robot' build argument 'cmake_clean_first' from command line to 'False'
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'my_two_wheel_robot' build argument 'cmake_force_configure' from command line to 'False'
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'my_two_wheel_robot' build argument 'ament_cmake_args' from command line to 'None'
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'my_two_wheel_robot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.752s] Level 5:colcon.colcon_core.verb:set package 'my_two_wheel_robot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.752s] DEBUG:colcon.colcon_core.verb:Building package 'my_two_wheel_robot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anatoly/ros2_ws/build/my_two_wheel_robot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anatoly/ros2_ws/install/my_two_wheel_robot', 'merge_install': False, 'path': '/home/anatoly/ros2_ws/src/my_two_wheel_robot', 'symlink_install': False, 'test_result_base': None}
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'twist_converter' build argument 'cmake_args' from command line to 'None'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'twist_converter' build argument 'cmake_target' from command line to 'None'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'twist_converter' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'twist_converter' build argument 'cmake_clean_cache' from command line to 'False'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'twist_converter' build argument 'cmake_clean_first' from command line to 'False'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'twist_converter' build argument 'cmake_force_configure' from command line to 'False'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'twist_converter' build argument 'ament_cmake_args' from command line to 'None'
+[0.753s] Level 5:colcon.colcon_core.verb:set package 'twist_converter' build argument 'catkin_cmake_args' from command line to 'None'
+[0.754s] Level 5:colcon.colcon_core.verb:set package 'twist_converter' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.754s] DEBUG:colcon.colcon_core.verb:Building package 'twist_converter' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anatoly/ros2_ws/build/twist_converter', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anatoly/ros2_ws/install/twist_converter', 'merge_install': False, 'path': '/home/anatoly/ros2_ws/src/twist_converter', 'symlink_install': False, 'test_result_base': None}
+[0.754s] Level 5:colcon.colcon_core.verb:set package 'view_robot' build argument 'cmake_args' from command line to 'None'
+[0.754s] Level 5:colcon.colcon_core.verb:set package 'view_robot' build argument 'cmake_target' from command line to 'None'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'view_robot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'view_robot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'view_robot' build argument 'cmake_clean_first' from command line to 'False'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'view_robot' build argument 'cmake_force_configure' from command line to 'False'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'view_robot' build argument 'ament_cmake_args' from command line to 'None'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'view_robot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.755s] Level 5:colcon.colcon_core.verb:set package 'view_robot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.755s] DEBUG:colcon.colcon_core.verb:Building package 'view_robot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/anatoly/ros2_ws/build/view_robot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/anatoly/ros2_ws/install/view_robot', 'merge_install': False, 'path': '/home/anatoly/ros2_ws/src/view_robot', 'symlink_install': False, 'test_result_base': None}
+[0.755s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.757s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.758s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/anatoly/ros2_ws/src/micro_ros_setup' with build type 'ament_cmake'
+[0.758s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/anatoly/ros2_ws/src/micro_ros_setup'
+[0.764s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.765s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.765s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.778s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/anatoly/ros2_ws/src/my_fake_lidar' with build type 'ament_python'
+[0.778s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_fake_lidar', 'ament_prefix_path')
+[0.778s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/my_fake_lidar/share/my_fake_lidar/hook/ament_prefix_path.ps1'
+[0.782s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anatoly/ros2_ws/install/my_fake_lidar/share/my_fake_lidar/hook/ament_prefix_path.dsv'
+[0.783s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/my_fake_lidar/share/my_fake_lidar/hook/ament_prefix_path.sh'
+[0.788s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.788s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.814s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anatoly/ros2_ws/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/anatoly/ros2_ws/build/micro_ros_setup -- -j2 -l2
+[1.569s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/anatoly/ros2_ws/src/my_fake_lidar'
+[1.569s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.569s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.582s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anatoly/ros2_ws/build/micro_ros_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/anatoly/ros2_ws/build/micro_ros_setup -- -j2 -l2
+[1.607s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anatoly/ros2_ws/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/anatoly/ros2_ws/build/micro_ros_setup
+[1.655s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_setup)
+[1.668s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/micro_ros_setup' for CMake module files
+[1.676s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/micro_ros_setup' for CMake config files
+[1.680s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_setup', 'cmake_prefix_path')
+[1.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.ps1'
+[1.684s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anatoly/ros2_ws/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.dsv'
+[1.686s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.sh'
+[1.689s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/micro_ros_setup/lib'
+[1.689s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/micro_ros_setup/bin'
+[1.689s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/micro_ros_setup/lib/pkgconfig/micro_ros_setup.pc'
+[1.692s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/micro_ros_setup/lib/python3.12/site-packages'
+[1.693s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/micro_ros_setup/bin'
+[1.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/micro_ros_setup/share/micro_ros_setup/package.ps1'
+[1.700s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anatoly/ros2_ws/install/micro_ros_setup/share/micro_ros_setup/package.dsv'
+[1.701s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/micro_ros_setup/share/micro_ros_setup/package.sh'
+[1.705s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/micro_ros_setup/share/micro_ros_setup/package.bash'
+[1.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/micro_ros_setup/share/micro_ros_setup/package.zsh'
+[1.712s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anatoly/ros2_ws/install/micro_ros_setup/share/colcon-core/packages/micro_ros_setup)
+[1.713s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_setup)
+[1.714s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/micro_ros_setup' for CMake module files
+[1.718s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/micro_ros_setup' for CMake config files
+[1.722s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_setup', 'cmake_prefix_path')
+[1.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.ps1'
+[1.726s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anatoly/ros2_ws/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.dsv'
+[1.730s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.sh'
+[1.733s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/micro_ros_setup/lib'
+[1.734s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/micro_ros_setup/bin'
+[1.734s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/micro_ros_setup/lib/pkgconfig/micro_ros_setup.pc'
+[1.735s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/micro_ros_setup/lib/python3.12/site-packages'
+[1.737s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/micro_ros_setup/bin'
+[1.741s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/micro_ros_setup/share/micro_ros_setup/package.ps1'
+[1.737s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anatoly/ros2_ws/build/micro_ros_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/anatoly/ros2_ws/build/micro_ros_setup
+[1.744s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anatoly/ros2_ws/install/micro_ros_setup/share/micro_ros_setup/package.dsv'
+[1.748s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/micro_ros_setup/share/micro_ros_setup/package.sh'
+[1.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/micro_ros_setup/share/micro_ros_setup/package.bash'
+[1.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/micro_ros_setup/share/micro_ros_setup/package.zsh'
+[1.760s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anatoly/ros2_ws/install/micro_ros_setup/share/colcon-core/packages/micro_ros_setup)
+[1.767s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/anatoly/ros2_ws/src/my_path_publisher' with build type 'ament_python'
+[1.767s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_path_publisher', 'ament_prefix_path')
+[1.768s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/my_path_publisher/share/my_path_publisher/hook/ament_prefix_path.ps1'
+[1.781s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anatoly/ros2_ws/install/my_path_publisher/share/my_path_publisher/hook/ament_prefix_path.dsv'
+[1.785s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/my_path_publisher/share/my_path_publisher/hook/ament_prefix_path.sh'
+[1.788s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.788s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.628s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/anatoly/ros2_ws/src/my_path_publisher'
+[2.629s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.629s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.970s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anatoly/ros2_ws/src/my_fake_lidar': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/anatoly/ros2_ws/build/my_fake_lidar/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anatoly/ros2_ws/install/my_fake_lidar/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_fake_lidar build --build-base /home/anatoly/ros2_ws/build/my_fake_lidar/build install --record /home/anatoly/ros2_ws/build/my_fake_lidar/install.log --single-version-externally-managed install_data
+[4.741s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anatoly/ros2_ws/src/my_path_publisher': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/anatoly/ros2_ws/build/my_path_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anatoly/ros2_ws/install/my_path_publisher/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_path_publisher build --build-base /home/anatoly/ros2_ws/build/my_path_publisher/build install --record /home/anatoly/ros2_ws/build/my_path_publisher/install.log --single-version-externally-managed install_data
+[6.249s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_fake_lidar' for CMake module files
+[6.250s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anatoly/ros2_ws/src/my_fake_lidar' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/anatoly/ros2_ws/build/my_fake_lidar/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anatoly/ros2_ws/install/my_fake_lidar/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_fake_lidar build --build-base /home/anatoly/ros2_ws/build/my_fake_lidar/build install --record /home/anatoly/ros2_ws/build/my_fake_lidar/install.log --single-version-externally-managed install_data
+[6.251s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_fake_lidar' for CMake config files
+[6.252s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_fake_lidar/lib'
+[6.253s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_fake_lidar/bin'
+[6.253s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_fake_lidar/lib/pkgconfig/my_fake_lidar.pc'
+[6.253s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_fake_lidar/lib/python3.12/site-packages'
+[6.254s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_fake_lidar', 'pythonpath')
+[6.254s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/my_fake_lidar/share/my_fake_lidar/hook/pythonpath.ps1'
+[6.255s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anatoly/ros2_ws/install/my_fake_lidar/share/my_fake_lidar/hook/pythonpath.dsv'
+[6.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/my_fake_lidar/share/my_fake_lidar/hook/pythonpath.sh'
+[6.261s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_fake_lidar/bin'
+[6.261s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_fake_lidar)
+[6.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/my_fake_lidar/share/my_fake_lidar/package.ps1'
+[6.263s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anatoly/ros2_ws/install/my_fake_lidar/share/my_fake_lidar/package.dsv'
+[6.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/my_fake_lidar/share/my_fake_lidar/package.sh'
+[6.265s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/my_fake_lidar/share/my_fake_lidar/package.bash'
+[6.266s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/my_fake_lidar/share/my_fake_lidar/package.zsh'
+[6.267s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anatoly/ros2_ws/install/my_fake_lidar/share/colcon-core/packages/my_fake_lidar)
+[6.268s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/anatoly/ros2_ws/src/my_two_wheel_robot' with build type 'ament_cmake'
+[6.269s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/anatoly/ros2_ws/src/my_two_wheel_robot'
+[6.269s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.269s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.298s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anatoly/ros2_ws/build/my_two_wheel_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/anatoly/ros2_ws/build/my_two_wheel_robot -- -j2 -l2
+[6.414s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anatoly/ros2_ws/build/my_two_wheel_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/anatoly/ros2_ws/build/my_two_wheel_robot -- -j2 -l2
+[6.417s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anatoly/ros2_ws/build/my_two_wheel_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/anatoly/ros2_ws/build/my_two_wheel_robot
+[6.458s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_two_wheel_robot)
+[6.458s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_two_wheel_robot' for CMake module files
+[6.459s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anatoly/ros2_ws/build/my_two_wheel_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/anatoly/ros2_ws/build/my_two_wheel_robot
+[6.461s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_two_wheel_robot' for CMake config files
+[6.461s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_two_wheel_robot', 'cmake_prefix_path')
+[6.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/my_two_wheel_robot/share/my_two_wheel_robot/hook/cmake_prefix_path.ps1'
+[6.463s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anatoly/ros2_ws/install/my_two_wheel_robot/share/my_two_wheel_robot/hook/cmake_prefix_path.dsv'
+[6.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/my_two_wheel_robot/share/my_two_wheel_robot/hook/cmake_prefix_path.sh'
+[6.466s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_two_wheel_robot/bin'
+[6.466s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_two_wheel_robot/lib/pkgconfig/my_two_wheel_robot.pc'
+[6.467s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_two_wheel_robot/lib/python3.12/site-packages'
+[6.467s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_two_wheel_robot/bin'
+[6.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/my_two_wheel_robot/share/my_two_wheel_robot/package.ps1'
+[6.469s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anatoly/ros2_ws/install/my_two_wheel_robot/share/my_two_wheel_robot/package.dsv'
+[6.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/my_two_wheel_robot/share/my_two_wheel_robot/package.sh'
+[6.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/my_two_wheel_robot/share/my_two_wheel_robot/package.bash'
+[6.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/my_two_wheel_robot/share/my_two_wheel_robot/package.zsh'
+[6.473s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anatoly/ros2_ws/install/my_two_wheel_robot/share/colcon-core/packages/my_two_wheel_robot)
+[6.475s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_two_wheel_robot)
+[6.475s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_two_wheel_robot' for CMake module files
+[6.477s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_two_wheel_robot' for CMake config files
+[6.477s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_two_wheel_robot', 'cmake_prefix_path')
+[6.478s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/my_two_wheel_robot/share/my_two_wheel_robot/hook/cmake_prefix_path.ps1'
+[6.479s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anatoly/ros2_ws/install/my_two_wheel_robot/share/my_two_wheel_robot/hook/cmake_prefix_path.dsv'
+[6.480s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/my_two_wheel_robot/share/my_two_wheel_robot/hook/cmake_prefix_path.sh'
+[6.481s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_two_wheel_robot/bin'
+[6.481s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_two_wheel_robot/lib/pkgconfig/my_two_wheel_robot.pc'
+[6.482s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_two_wheel_robot/lib/python3.12/site-packages'
+[6.482s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_two_wheel_robot/bin'
+[6.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/my_two_wheel_robot/share/my_two_wheel_robot/package.ps1'
+[6.485s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anatoly/ros2_ws/install/my_two_wheel_robot/share/my_two_wheel_robot/package.dsv'
+[6.486s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/my_two_wheel_robot/share/my_two_wheel_robot/package.sh'
+[6.487s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/my_two_wheel_robot/share/my_two_wheel_robot/package.bash'
+[6.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/my_two_wheel_robot/share/my_two_wheel_robot/package.zsh'
+[6.490s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anatoly/ros2_ws/install/my_two_wheel_robot/share/colcon-core/packages/my_two_wheel_robot)
+[6.490s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/anatoly/ros2_ws/src/twist_converter' with build type 'ament_python'
+[6.491s] Level 1:colcon.colcon_core.shell:create_environment_hook('twist_converter', 'ament_prefix_path')
+[6.491s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/twist_converter/share/twist_converter/hook/ament_prefix_path.ps1'
+[6.493s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anatoly/ros2_ws/install/twist_converter/share/twist_converter/hook/ament_prefix_path.dsv'
+[6.494s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/twist_converter/share/twist_converter/hook/ament_prefix_path.sh'
+[6.496s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.496s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.307s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/anatoly/ros2_ws/src/twist_converter'
+[7.308s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.308s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.319s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_path_publisher' for CMake module files
+[7.320s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anatoly/ros2_ws/src/my_path_publisher' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/anatoly/ros2_ws/build/my_path_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anatoly/ros2_ws/install/my_path_publisher/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_path_publisher build --build-base /home/anatoly/ros2_ws/build/my_path_publisher/build install --record /home/anatoly/ros2_ws/build/my_path_publisher/install.log --single-version-externally-managed install_data
+[7.321s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_path_publisher' for CMake config files
+[7.322s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_path_publisher/lib'
+[7.323s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_path_publisher/bin'
+[7.323s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_path_publisher/lib/pkgconfig/my_path_publisher.pc'
+[7.323s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_path_publisher/lib/python3.12/site-packages'
+[7.324s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_path_publisher', 'pythonpath')
+[7.324s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/my_path_publisher/share/my_path_publisher/hook/pythonpath.ps1'
+[7.325s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anatoly/ros2_ws/install/my_path_publisher/share/my_path_publisher/hook/pythonpath.dsv'
+[7.326s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/my_path_publisher/share/my_path_publisher/hook/pythonpath.sh'
+[7.328s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/my_path_publisher/bin'
+[7.328s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_path_publisher)
+[7.328s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/my_path_publisher/share/my_path_publisher/package.ps1'
+[7.330s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anatoly/ros2_ws/install/my_path_publisher/share/my_path_publisher/package.dsv'
+[7.331s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/my_path_publisher/share/my_path_publisher/package.sh'
+[7.333s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/my_path_publisher/share/my_path_publisher/package.bash'
+[7.334s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/my_path_publisher/share/my_path_publisher/package.zsh'
+[7.335s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anatoly/ros2_ws/install/my_path_publisher/share/colcon-core/packages/my_path_publisher)
+[7.337s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/anatoly/ros2_ws/src/view_robot' with build type 'ament_cmake'
+[7.337s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/anatoly/ros2_ws/src/view_robot'
+[7.338s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.338s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.366s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anatoly/ros2_ws/build/view_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/anatoly/ros2_ws/build/view_robot -- -j2 -l2
+[7.491s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anatoly/ros2_ws/build/view_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/anatoly/ros2_ws/build/view_robot -- -j2 -l2
+[7.493s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anatoly/ros2_ws/build/view_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/anatoly/ros2_ws/build/view_robot
+[7.531s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(view_robot)
+[7.531s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/view_robot' for CMake module files
+[7.533s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anatoly/ros2_ws/build/view_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/anatoly/ros2_ws/build/view_robot
+[7.535s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/view_robot' for CMake config files
+[7.536s] Level 1:colcon.colcon_core.shell:create_environment_hook('view_robot', 'cmake_prefix_path')
+[7.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/view_robot/share/view_robot/hook/cmake_prefix_path.ps1'
+[7.539s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anatoly/ros2_ws/install/view_robot/share/view_robot/hook/cmake_prefix_path.dsv'
+[7.541s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/view_robot/share/view_robot/hook/cmake_prefix_path.sh'
+[7.543s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/view_robot/bin'
+[7.544s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/view_robot/lib/pkgconfig/view_robot.pc'
+[7.544s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/view_robot/lib/python3.12/site-packages'
+[7.545s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/view_robot/bin'
+[7.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/view_robot/share/view_robot/package.ps1'
+[7.548s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anatoly/ros2_ws/install/view_robot/share/view_robot/package.dsv'
+[7.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/view_robot/share/view_robot/package.sh'
+[7.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/view_robot/share/view_robot/package.bash'
+[7.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/view_robot/share/view_robot/package.zsh'
+[7.553s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anatoly/ros2_ws/install/view_robot/share/colcon-core/packages/view_robot)
+[7.554s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(view_robot)
+[7.555s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/view_robot' for CMake module files
+[7.560s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/view_robot' for CMake config files
+[7.561s] Level 1:colcon.colcon_core.shell:create_environment_hook('view_robot', 'cmake_prefix_path')
+[7.561s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/view_robot/share/view_robot/hook/cmake_prefix_path.ps1'
+[7.565s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anatoly/ros2_ws/install/view_robot/share/view_robot/hook/cmake_prefix_path.dsv'
+[7.570s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/view_robot/share/view_robot/hook/cmake_prefix_path.sh'
+[7.573s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/view_robot/bin'
+[7.573s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/view_robot/lib/pkgconfig/view_robot.pc'
+[7.574s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/view_robot/lib/python3.12/site-packages'
+[7.575s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/view_robot/bin'
+[7.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/view_robot/share/view_robot/package.ps1'
+[7.576s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anatoly/ros2_ws/install/view_robot/share/view_robot/package.dsv'
+[7.578s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/view_robot/share/view_robot/package.sh'
+[7.579s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/view_robot/share/view_robot/package.bash'
+[7.581s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/view_robot/share/view_robot/package.zsh'
+[7.582s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anatoly/ros2_ws/install/view_robot/share/colcon-core/packages/view_robot)
+[9.327s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/anatoly/ros2_ws/src/twist_converter': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/anatoly/ros2_ws/build/twist_converter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anatoly/ros2_ws/install/twist_converter/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/twist_converter build --build-base /home/anatoly/ros2_ws/build/twist_converter/build install --record /home/anatoly/ros2_ws/build/twist_converter/install.log --single-version-externally-managed install_data
+[11.117s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/twist_converter' for CMake module files
+[11.118s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/twist_converter' for CMake config files
+[11.119s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/anatoly/ros2_ws/src/twist_converter' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/anatoly/ros2_ws/build/twist_converter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anatoly/ros2_ws/install/twist_converter/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/twist_converter build --build-base /home/anatoly/ros2_ws/build/twist_converter/build install --record /home/anatoly/ros2_ws/build/twist_converter/install.log --single-version-externally-managed install_data
+[11.122s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/twist_converter/lib'
+[11.123s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/twist_converter/bin'
+[11.123s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/twist_converter/lib/pkgconfig/twist_converter.pc'
+[11.124s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/twist_converter/lib/python3.12/site-packages'
+[11.124s] Level 1:colcon.colcon_core.shell:create_environment_hook('twist_converter', 'pythonpath')
+[11.125s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/twist_converter/share/twist_converter/hook/pythonpath.ps1'
+[11.126s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/anatoly/ros2_ws/install/twist_converter/share/twist_converter/hook/pythonpath.dsv'
+[11.127s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/anatoly/ros2_ws/install/twist_converter/share/twist_converter/hook/pythonpath.sh'
+[11.129s] Level 1:colcon.colcon_core.environment:checking '/home/anatoly/ros2_ws/install/twist_converter/bin'
+[11.129s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(twist_converter)
+[11.129s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/twist_converter/share/twist_converter/package.ps1'
+[11.132s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/anatoly/ros2_ws/install/twist_converter/share/twist_converter/package.dsv'
+[11.133s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/twist_converter/share/twist_converter/package.sh'
+[11.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/twist_converter/share/twist_converter/package.bash'
+[11.136s] INFO:colcon.colcon_core.shell:Creating package script '/home/anatoly/ros2_ws/install/twist_converter/share/twist_converter/package.zsh'
+[11.137s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/anatoly/ros2_ws/install/twist_converter/share/colcon-core/packages/twist_converter)
+[11.139s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[11.139s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[11.139s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[11.140s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[11.165s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[11.166s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[11.166s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[11.211s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[11.211s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/anatoly/ros2_ws/install/local_setup.ps1'
+[11.217s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/anatoly/ros2_ws/install/_local_setup_util_ps1.py'
+[11.228s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/anatoly/ros2_ws/install/setup.ps1'
+[11.231s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/anatoly/ros2_ws/install/local_setup.sh'
+[11.232s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/anatoly/ros2_ws/install/_local_setup_util_sh.py'
+[11.234s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/anatoly/ros2_ws/install/setup.sh'
+[11.237s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/anatoly/ros2_ws/install/local_setup.bash'
+[11.239s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/anatoly/ros2_ws/install/setup.bash'
+[11.243s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/anatoly/ros2_ws/install/local_setup.zsh'
+[11.244s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/anatoly/ros2_ws/install/setup.zsh'

@@ -1,0 +1,2 @@
+[console_scripts]
+path_publisher = my_path_publisher.path_publisher:main

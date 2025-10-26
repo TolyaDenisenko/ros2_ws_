@@ -1,0 +1,94 @@
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+-- Configuring done (4.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/anatoly/ros2_ws/build/audio_common_msgs
+[  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[  1%] Built target ament_cmake_python_copy_audio_common_msgs
+running egg_info
+creating audio_common_msgs.egg-info
+writing audio_common_msgs.egg-info/PKG-INFO
+writing dependency_links to audio_common_msgs.egg-info/dependency_links.txt
+writing top-level names to audio_common_msgs.egg-info/top_level.txt
+writing manifest file 'audio_common_msgs.egg-info/SOURCES.txt'
+[  1%] Built target audio_common_msgs__rosidl_generator_type_description
+[  3%] [34m[1mGenerating C code for ROS interfaces[0m
+reading manifest file 'audio_common_msgs.egg-info/SOURCES.txt'
+writing manifest file 'audio_common_msgs.egg-info/SOURCES.txt'
+[  3%] Built target ament_cmake_python_build_audio_common_msgs_egg
+[  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  5%] Built target audio_common_msgs__cpp
+[  7%] [32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_c.dir/rosidl_generator_c/audio_common_msgs/msg/detail/audio_data__functions.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_c.dir/rosidl_generator_c/audio_common_msgs/msg/detail/audio_data__description.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_c.dir/rosidl_generator_c/audio_common_msgs/msg/detail/audio_data__type_support.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_c.dir/rosidl_generator_c/audio_common_msgs/msg/detail/audio_data_stamped__description.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_c.dir/rosidl_generator_c/audio_common_msgs/msg/detail/audio_data_stamped__functions.c.o[0m
+[ 16%] [32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_c.dir/rosidl_generator_c/audio_common_msgs/msg/detail/audio_data_stamped__type_support.c.o[0m
+[ 18%] [32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_c.dir/rosidl_generator_c/audio_common_msgs/msg/detail/audio_info__description.c.o[0m
+[ 20%] [32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_c.dir/rosidl_generator_c/audio_common_msgs/msg/detail/audio_info__functions.c.o[0m
+[ 22%] [32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_c.dir/rosidl_generator_c/audio_common_msgs/msg/detail/audio_info__type_support.c.o[0m
+[ 24%] [32m[1mLinking C shared library libaudio_common_msgs__rosidl_generator_c.so[0m
+[ 24%] Built target audio_common_msgs__rosidl_generator_c
+[ 25%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 27%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/audio_common_msgs/msg/audio_data__type_support.cpp.o[0m
+[ 31%] [32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/audio_common_msgs/msg/detail/audio_data__type_support.c.o[0m
+[ 33%] [32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/audio_common_msgs/msg/detail/audio_data_stamped__type_support.c.o[0m
+[ 35%] [32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/audio_common_msgs/msg/detail/audio_info__type_support.c.o[0m
+[ 37%] [32m[1mLinking C shared library libaudio_common_msgs__rosidl_typesupport_introspection_c.so[0m
+[ 37%] Built target audio_common_msgs__rosidl_typesupport_introspection_c
+[ 38%] [32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/audio_common_msgs/msg/audio_data_stamped__type_support.cpp.o[0m
+[ 40%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/audio_common_msgs/msg/audio_info__type_support.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/audio_common_msgs/msg/audio_data__type_support.cpp.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/audio_common_msgs/msg/audio_data_stamped__type_support.cpp.o[0m
+[ 48%] [32m[1mLinking CXX shared library libaudio_common_msgs__rosidl_typesupport_cpp.so[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/audio_common_msgs/msg/audio_info__type_support.cpp.o[0m
+[ 50%] Built target audio_common_msgs__rosidl_typesupport_cpp
+[ 51%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 53%] [32m[1mLinking CXX shared library libaudio_common_msgs__rosidl_typesupport_c.so[0m
+[ 53%] Built target audio_common_msgs__rosidl_typesupport_c
+[ 55%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/audio_common_msgs/msg/detail/dds_fastrtps/audio_data__type_support.cpp.o[0m
+[ 59%] [32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/audio_common_msgs/msg/detail/audio_data__type_support_c.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/audio_common_msgs/msg/detail/dds_fastrtps/audio_data_stamped__type_support.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/audio_common_msgs/msg/detail/audio_data_stamped__type_support_c.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/audio_common_msgs/msg/detail/dds_fastrtps/audio_info__type_support.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/audio_common_msgs/msg/detail/audio_info__type_support_c.cpp.o[0m
+[ 68%] [32m[1mLinking CXX shared library libaudio_common_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 68%] Built target audio_common_msgs__rosidl_typesupport_fastrtps_cpp
+[ 70%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 72%] [32m[1mLinking CXX shared library libaudio_common_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[ 72%] Built target audio_common_msgs__rosidl_typesupport_fastrtps_c
+[ 74%] [32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/audio_common_msgs/msg/detail/audio_data__type_support.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/audio_common_msgs/msg/detail/audio_data_stamped__type_support.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/audio_common_msgs/msg/detail/audio_info__type_support.cpp.o[0m
+[ 79%] [32m[1mLinking CXX shared library libaudio_common_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[ 79%] Built target audio_common_msgs__rosidl_typesupport_introspection_cpp
+[ 79%] Built target audio_common_msgs
+[ 81%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 81%] Built target audio_common_msgs__py
+[ 83%] [32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_py.dir/rosidl_generator_py/audio_common_msgs/msg/_audio_data_stamped_s.c.o[0m
+[ 85%] [32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_py.dir/rosidl_generator_py/audio_common_msgs/msg/_audio_data_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_py.dir/rosidl_generator_py/audio_common_msgs/msg/_audio_info_s.c.o[0m
+[ 88%] [32m[1mLinking C shared library libaudio_common_msgs__rosidl_generator_py.so[0m
+[ 88%] Built target audio_common_msgs__rosidl_generator_py
+[ 90%] [32mBuilding C object CMakeFiles/audio_common_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/audio_common_msgs/_audio_common_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/audio_common_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/audio_common_msgs/_audio_common_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 94%] [32m[1mLinking C shared module rosidl_generator_py/audio_common_msgs/audio_common_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[ 94%] Built target audio_common_msgs_s__rosidl_typesupport_introspection_c
+[ 96%] [32mBuilding C object CMakeFiles/audio_common_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/audio_common_msgs/_audio_common_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[ 98%] [32m[1mLinking C shared module rosidl_generator_py/audio_common_msgs/audio_common_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[ 98%] Built target audio_common_msgs_s__rosidl_typesupport_fastrtps_c
+[100%] [32m[1mLinking C shared module rosidl_generator_py/audio_common_msgs/audio_common_msgs_s__rosidl_typesupport_c.so[0m
+[100%] Built target audio_common_msgs_s__rosidl_typesupport_c

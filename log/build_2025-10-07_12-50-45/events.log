@@ -1,0 +1,412 @@
+[0.000000] (-) TimerEvent: {}
+[0.000728] (audio_common_msgs) JobQueued: {'identifier': 'audio_common_msgs', 'dependencies': OrderedDict()}
+[0.000833] (kinect_ros2) JobQueued: {'identifier': 'kinect_ros2', 'dependencies': OrderedDict()}
+[0.000885] (micro_ros_setup) JobQueued: {'identifier': 'micro_ros_setup', 'dependencies': OrderedDict()}
+[0.000925] (my_fake_lidar) JobQueued: {'identifier': 'my_fake_lidar', 'dependencies': OrderedDict()}
+[0.000962] (my_path_publisher) JobQueued: {'identifier': 'my_path_publisher', 'dependencies': OrderedDict()}
+[0.000998] (my_two_wheel_robot) JobQueued: {'identifier': 'my_two_wheel_robot', 'dependencies': OrderedDict()}
+[0.001047] (ros2_kinect_depth) JobQueued: {'identifier': 'ros2_kinect_depth', 'dependencies': OrderedDict()}
+[0.001078] (ros2_kinect_led) JobQueued: {'identifier': 'ros2_kinect_led', 'dependencies': OrderedDict()}
+[0.001121] (ros2_kinect_rgb) JobQueued: {'identifier': 'ros2_kinect_rgb', 'dependencies': OrderedDict()}
+[0.001160] (ros2_kinect_tilt) JobQueued: {'identifier': 'ros2_kinect_tilt', 'dependencies': OrderedDict()}
+[0.001201] (twist_converter) JobQueued: {'identifier': 'twist_converter', 'dependencies': OrderedDict()}
+[0.003006] (view_robot) JobQueued: {'identifier': 'view_robot', 'dependencies': OrderedDict()}
+[0.003116] (audio_common) JobQueued: {'identifier': 'audio_common', 'dependencies': OrderedDict({'audio_common_msgs': '/home/anatoly/ros2_ws/install/audio_common_msgs'})}
+[0.003172] (ros2_kinect_mic_node) JobQueued: {'identifier': 'ros2_kinect_mic_node', 'dependencies': OrderedDict({'audio_common_msgs': '/home/anatoly/ros2_ws/install/audio_common_msgs'})}
+[0.003214] (ros2_tests) JobQueued: {'identifier': 'ros2_tests', 'dependencies': OrderedDict({'audio_common_msgs': '/home/anatoly/ros2_ws/install/audio_common_msgs'})}
+[0.003264] (audio_common_msgs) JobStarted: {'identifier': 'audio_common_msgs'}
+[0.021382] (kinect_ros2) JobStarted: {'identifier': 'kinect_ros2'}
+[0.034490] (audio_common_msgs) JobProgress: {'identifier': 'audio_common_msgs', 'progress': 'cmake'}
+[0.036595] (audio_common_msgs) JobProgress: {'identifier': 'audio_common_msgs', 'progress': 'build'}
+[0.038143] (audio_common_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/anatoly/ros2_ws/build/audio_common_msgs', '--', '-j2', '-l2'], 'cwd': '/home/anatoly/ros2_ws/build/audio_common_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'anatoly', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/anatoly', 'OLDPWD': '/home/anatoly/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '4435', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/anatoly/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'anatoly', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'anatoly', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/anatoly-Latitude-3340:@/tmp/.ICE-unix/4215,unix/anatoly-Latitude-3340:/tmp/.ICE-unix/4215', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a4c755b4_4c18_4741_bc2a_9052d580b90f', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.4CUVD3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/anatoly/ros2_ws/install/view_robot:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_two_wheel_robot:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/home/anatoly/ros2_ws/install/micro_ros_setup:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/anatoly/ros2_ws/build/audio_common_msgs', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/anatoly/ros2_ws/install/twist_converter/lib/python3.12/site-packages:/home/anatoly/ros2_ws/install/my_path_publisher/lib/python3.12/site-packages:/home/anatoly/ros2_ws/install/my_fake_lidar/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/anatoly/ros2_ws/install/view_robot:/home/anatoly/ros2_ws/install/my_two_wheel_robot:/home/anatoly/ros2_ws/install/micro_ros_setup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy'}), 'shell': False}
+[0.050049] (kinect_ros2) JobProgress: {'identifier': 'kinect_ros2', 'progress': 'cmake'}
+[0.050145] (kinect_ros2) JobProgress: {'identifier': 'kinect_ros2', 'progress': 'build'}
+[0.050830] (kinect_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/anatoly/ros2_ws/build/kinect_ros2', '--', '-j2', '-l2'], 'cwd': '/home/anatoly/ros2_ws/build/kinect_ros2', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'anatoly', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/anatoly', 'OLDPWD': '/home/anatoly/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '4435', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/anatoly/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'anatoly', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'anatoly', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/anatoly-Latitude-3340:@/tmp/.ICE-unix/4215,unix/anatoly-Latitude-3340:/tmp/.ICE-unix/4215', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a4c755b4_4c18_4741_bc2a_9052d580b90f', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.4CUVD3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/anatoly/ros2_ws/install/view_robot:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_two_wheel_robot:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/home/anatoly/ros2_ws/install/micro_ros_setup:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/anatoly/ros2_ws/build/kinect_ros2', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/anatoly/ros2_ws/install/twist_converter/lib/python3.12/site-packages:/home/anatoly/ros2_ws/install/my_path_publisher/lib/python3.12/site-packages:/home/anatoly/ros2_ws/install/my_fake_lidar/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/anatoly/ros2_ws/install/view_robot:/home/anatoly/ros2_ws/install/my_two_wheel_robot:/home/anatoly/ros2_ws/install/micro_ros_setup:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy'}), 'shell': False}
+[0.097996] (-) TimerEvent: {}
+[0.132424] (kinect_ros2) StdoutLine: {'line': b'-- Found camera_info_manager: 5.1.7 (/opt/ros/jazzy/share/camera_info_manager/cmake)\n'}
+[0.172410] (audio_common_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.199355] (-) TimerEvent: {}
+[0.273505] (audio_common_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.300349] (-) TimerEvent: {}
+[0.400726] (-) TimerEvent: {}
+[0.501132] (-) TimerEvent: {}
+[0.536016] (audio_common_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.545410] (audio_common_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.601282] (-) TimerEvent: {}
+[0.661410] (audio_common_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.702328] (-) TimerEvent: {}
+[0.757605] (audio_common_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.762869] (audio_common_msgs) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[0.802856] (-) TimerEvent: {}
+[0.905034] (-) TimerEvent: {}
+[0.955815] (kinect_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.987385] (kinect_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.005161] (-) TimerEvent: {}
+[1.035017] (kinect_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.080534] (kinect_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.105320] (-) TimerEvent: {}
+[1.205775] (-) TimerEvent: {}
+[1.292986] (kinect_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.298532] (kinect_ros2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.307355] (-) TimerEvent: {}
+[1.407819] (-) TimerEvent: {}
+[1.510538] (-) TimerEvent: {}
+[1.513377] (kinect_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.610678] (-) TimerEvent: {}
+[1.711124] (-) TimerEvent: {}
+[1.760349] (audio_common_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[1.811335] (-) TimerEvent: {}
+[1.911773] (-) TimerEvent: {}
+[1.921177] (kinect_ros2) StdoutLine: {'line': b"-- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'\n"}
+[2.011898] (-) TimerEvent: {}
+[2.044346] (kinect_ros2) StdoutLine: {'line': b'-- Found rclcpp_components: 28.1.12 (/opt/ros/jazzy/share/rclcpp_components/cmake)\n'}
+[2.112026] (-) TimerEvent: {}
+[2.161397] (audio_common_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.186796] (kinect_ros2) StdoutLine: {'line': b'-- Found image_transport: 5.1.7 (/opt/ros/jazzy/share/image_transport/cmake)\n'}
+[2.212158] (-) TimerEvent: {}
+[2.225426] (kinect_ros2) StdoutLine: {'line': b'-- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)\n'}
+[2.258124] (kinect_ros2) StdoutLine: {'line': b'-- Found tf2_ros: 0.36.14 (/opt/ros/jazzy/share/tf2_ros/cmake)\n'}
+[2.312307] (-) TimerEvent: {}
+[2.414537] (-) TimerEvent: {}
+[2.514989] (-) TimerEvent: {}
+[2.616064] (-) TimerEvent: {}
+[2.684728] (audio_common_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.687903] (audio_common_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[2.716187] (-) TimerEvent: {}
+[2.817366] (-) TimerEvent: {}
+[2.823406] (kinect_ros2) StdoutLine: {'line': b'-- Configuring done (2.7s)\n'}
+[2.872117] (kinect_ros2) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.888344] (kinect_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/anatoly/ros2_ws/build/kinect_ros2\n'}
+[2.917490] (-) TimerEvent: {}
+[3.015004] (kinect_ros2) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/kinect_ros2_node.dir/src/kinect_ros2_component.cpp.o\x1b[0m\n'}
+[3.015396] (kinect_ros2) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/kinect_ros2_node.dir/src/kinect_ros2_node.cpp.o\x1b[0m\n'}
+[3.017608] (-) TimerEvent: {}
+[3.120325] (-) TimerEvent: {}
+[3.221528] (-) TimerEvent: {}
+[3.323495] (-) TimerEvent: {}
+[3.423927] (-) TimerEvent: {}
+[3.527519] (-) TimerEvent: {}
+[3.627976] (-) TimerEvent: {}
+[3.729572] (-) TimerEvent: {}
+[3.832030] (-) TimerEvent: {}
+[3.932500] (-) TimerEvent: {}
+[4.034548] (-) TimerEvent: {}
+[4.114965] (kinect_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/anatoly/ros2_ws/src/KinectV1-Ros2/src/kinect_ros2/src/kinect_ros2_component.cpp:3\x1b[m\x1b[K:\n'}
+[4.116326] (kinect_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/anatoly/ros2_ws/src/KinectV1-Ros2/src/kinect_ros2/include/kinect_ros2/kinect_ros2_component.hpp:6:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kcv_bridge/cv_bridge.h: No such file or directory\n'}
+[4.116623] (kinect_ros2) StderrLine: {'line': b'    6 | #include \x1b[01;31m\x1b[K<cv_bridge/cv_bridge.h>\x1b[m\x1b[K\n'}
+[4.116822] (kinect_ros2) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.117003] (kinect_ros2) StderrLine: {'line': b'compilation terminated.\n'}
+[4.125123] (kinect_ros2) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/kinect_ros2_node.dir/build.make:90: CMakeFiles/kinect_ros2_node.dir/src/kinect_ros2_component.cpp.o] Error 1\n'}
+[4.125529] (kinect_ros2) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[4.133099] (audio_common_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[4.135771] (-) TimerEvent: {}
+[4.238581] (-) TimerEvent: {}
+[4.259205] (audio_common_msgs) StdoutLine: {'line': b'-- Configuring done (4.1s)\n'}
+[4.338707] (-) TimerEvent: {}
+[4.375572] (audio_common_msgs) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[4.412208] (audio_common_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/anatoly/ros2_ws/build/audio_common_msgs\n'}
+[4.438837] (-) TimerEvent: {}
+[4.540232] (-) TimerEvent: {}
+[4.568071] (kinect_ros2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/anatoly/ros2_ws/src/KinectV1-Ros2/src/kinect_ros2/src/kinect_ros2_node.cpp:2\x1b[m\x1b[K:\n'}
+[4.570420] (kinect_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/anatoly/ros2_ws/src/KinectV1-Ros2/src/kinect_ros2/include/kinect_ros2/kinect_ros2_component.hpp:6:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kcv_bridge/cv_bridge.h: No such file or directory\n'}
+[4.570723] (kinect_ros2) StderrLine: {'line': b'    6 | #include \x1b[01;31m\x1b[K<cv_bridge/cv_bridge.h>\x1b[m\x1b[K\n'}
+[4.570913] (kinect_ros2) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.571086] (kinect_ros2) StderrLine: {'line': b'compilation terminated.\n'}
+[4.571432] (audio_common_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[4.577131] (audio_common_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_audio_common_msgs\n'}
+[4.584330] (kinect_ros2) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/kinect_ros2_node.dir/build.make:76: CMakeFiles/kinect_ros2_node.dir/src/kinect_ros2_node.cpp.o] Error 1\n'}
+[4.584681] (kinect_ros2) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/kinect_ros2_node.dir/all] Error 2\n'}
+[4.590128] (kinect_ros2) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.592106] (kinect_ros2) CommandEnded: {'returncode': 2}
+[4.639873] (kinect_ros2) JobEnded: {'identifier': 'kinect_ros2', 'rc': 2}
+[4.643122] (-) TimerEvent: {}
+[4.743482] (-) TimerEvent: {}
+[4.843893] (-) TimerEvent: {}
+[4.944351] (-) TimerEvent: {}
+[5.046628] (-) TimerEvent: {}
+[5.147024] (-) TimerEvent: {}
+[5.248321] (-) TimerEvent: {}
+[5.278567] (audio_common_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[5.281223] (audio_common_msgs) StdoutLine: {'line': b'creating audio_common_msgs.egg-info\n'}
+[5.349326] (audio_common_msgs) StdoutLine: {'line': b'writing audio_common_msgs.egg-info/PKG-INFO\n'}
+[5.349656] (-) TimerEvent: {}
+[5.350218] (audio_common_msgs) StdoutLine: {'line': b'writing dependency_links to audio_common_msgs.egg-info/dependency_links.txt\n'}
+[5.351234] (audio_common_msgs) StdoutLine: {'line': b'writing top-level names to audio_common_msgs.egg-info/top_level.txt\n'}
+[5.352042] (audio_common_msgs) StdoutLine: {'line': b"writing manifest file 'audio_common_msgs.egg-info/SOURCES.txt'\n"}
+[5.449785] (-) TimerEvent: {}
+[5.453784] (audio_common_msgs) StdoutLine: {'line': b'[  1%] Built target audio_common_msgs__rosidl_generator_type_description\n'}
+[5.491588] (audio_common_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[5.549898] (-) TimerEvent: {}
+[5.567467] (audio_common_msgs) StdoutLine: {'line': b"reading manifest file 'audio_common_msgs.egg-info/SOURCES.txt'\n"}
+[5.569682] (audio_common_msgs) StdoutLine: {'line': b"writing manifest file 'audio_common_msgs.egg-info/SOURCES.txt'\n"}
+[5.650351] (-) TimerEvent: {}
+[5.658017] (audio_common_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_audio_common_msgs_egg\n'}
+[5.717342] (audio_common_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[5.750470] (-) TimerEvent: {}
+[5.850895] (-) TimerEvent: {}
+[5.951296] (-) TimerEvent: {}
+[6.053320] (-) TimerEvent: {}
+[6.153683] (-) TimerEvent: {}
+[6.254056] (-) TimerEvent: {}
+[6.354492] (-) TimerEvent: {}
+[6.454874] (-) TimerEvent: {}
+[6.555317] (-) TimerEvent: {}
+[6.657531] (-) TimerEvent: {}
+[6.757978] (-) TimerEvent: {}
+[6.858449] (-) TimerEvent: {}
+[6.958884] (-) TimerEvent: {}
+[7.023333] (audio_common_msgs) StdoutLine: {'line': b'[  5%] Built target audio_common_msgs__cpp\n'}
+[7.059014] (-) TimerEvent: {}
+[7.160634] (-) TimerEvent: {}
+[7.179157] (audio_common_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_c.dir/rosidl_generator_c/audio_common_msgs/msg/detail/audio_data__functions.c.o\x1b[0m\n'}
+[7.187338] (audio_common_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_c.dir/rosidl_generator_c/audio_common_msgs/msg/detail/audio_data__description.c.o\x1b[0m\n'}
+[7.260778] (-) TimerEvent: {}
+[7.304701] (audio_common_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_c.dir/rosidl_generator_c/audio_common_msgs/msg/detail/audio_data__type_support.c.o\x1b[0m\n'}
+[7.314383] (audio_common_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_c.dir/rosidl_generator_c/audio_common_msgs/msg/detail/audio_data_stamped__description.c.o\x1b[0m\n'}
+[7.360915] (-) TimerEvent: {}
+[7.393845] (audio_common_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_c.dir/rosidl_generator_c/audio_common_msgs/msg/detail/audio_data_stamped__functions.c.o\x1b[0m\n'}
+[7.421868] (audio_common_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_c.dir/rosidl_generator_c/audio_common_msgs/msg/detail/audio_data_stamped__type_support.c.o\x1b[0m\n'}
+[7.461053] (-) TimerEvent: {}
+[7.505412] (audio_common_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_c.dir/rosidl_generator_c/audio_common_msgs/msg/detail/audio_info__description.c.o\x1b[0m\n'}
+[7.539545] (audio_common_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_c.dir/rosidl_generator_c/audio_common_msgs/msg/detail/audio_info__functions.c.o\x1b[0m\n'}
+[7.561194] (-) TimerEvent: {}
+[7.604626] (audio_common_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_c.dir/rosidl_generator_c/audio_common_msgs/msg/detail/audio_info__type_support.c.o\x1b[0m\n'}
+[7.661829] (-) TimerEvent: {}
+[7.685608] (audio_common_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32m\x1b[1mLinking C shared library libaudio_common_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[7.761782] (-) TimerEvent: {}
+[7.786712] (audio_common_msgs) StdoutLine: {'line': b'[ 24%] Built target audio_common_msgs__rosidl_generator_c\n'}
+[7.815353] (audio_common_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.815712] (audio_common_msgs) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[7.862330] (-) TimerEvent: {}
+[7.962703] (-) TimerEvent: {}
+[8.063323] (-) TimerEvent: {}
+[8.164511] (-) TimerEvent: {}
+[8.268321] (-) TimerEvent: {}
+[8.370329] (-) TimerEvent: {}
+[8.470728] (-) TimerEvent: {}
+[8.571111] (-) TimerEvent: {}
+[8.673076] (-) TimerEvent: {}
+[8.773540] (-) TimerEvent: {}
+[8.876508] (-) TimerEvent: {}
+[8.976925] (-) TimerEvent: {}
+[9.051883] (audio_common_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/audio_common_msgs/msg/audio_data__type_support.cpp.o\x1b[0m\n'}
+[9.077343] (-) TimerEvent: {}
+[9.132343] (audio_common_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/audio_common_msgs/msg/detail/audio_data__type_support.c.o\x1b[0m\n'}
+[9.177469] (-) TimerEvent: {}
+[9.236426] (audio_common_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/audio_common_msgs/msg/detail/audio_data_stamped__type_support.c.o\x1b[0m\n'}
+[9.277616] (-) TimerEvent: {}
+[9.335639] (audio_common_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/audio_common_msgs/msg/detail/audio_info__type_support.c.o\x1b[0m\n'}
+[9.380435] (-) TimerEvent: {}
+[9.443413] (audio_common_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32m\x1b[1mLinking C shared library libaudio_common_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[9.480570] (-) TimerEvent: {}
+[9.528416] (audio_common_msgs) StdoutLine: {'line': b'[ 37%] Built target audio_common_msgs__rosidl_typesupport_introspection_c\n'}
+[9.552460] (audio_common_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/audio_common_msgs/msg/audio_data_stamped__type_support.cpp.o\x1b[0m\n'}
+[9.580708] (-) TimerEvent: {}
+[9.684495] (-) TimerEvent: {}
+[9.784962] (-) TimerEvent: {}
+[9.888560] (-) TimerEvent: {}
+[9.989021] (-) TimerEvent: {}
+[10.081452] (audio_common_msgs) StdoutLine: {'line': b'[ 40%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.089153] (-) TimerEvent: {}
+[10.191546] (-) TimerEvent: {}
+[10.291967] (-) TimerEvent: {}
+[10.395539] (-) TimerEvent: {}
+[10.483181] (audio_common_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/audio_common_msgs/msg/audio_info__type_support.cpp.o\x1b[0m\n'}
+[10.495654] (-) TimerEvent: {}
+[10.596061] (-) TimerEvent: {}
+[10.699464] (-) TimerEvent: {}
+[10.799885] (-) TimerEvent: {}
+[10.903528] (-) TimerEvent: {}
+[11.003991] (-) TimerEvent: {}
+[11.104375] (-) TimerEvent: {}
+[11.145747] (audio_common_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/audio_common_msgs/msg/audio_data__type_support.cpp.o\x1b[0m\n'}
+[11.205465] (-) TimerEvent: {}
+[11.266419] (audio_common_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/audio_common_msgs/msg/audio_data_stamped__type_support.cpp.o\x1b[0m\n'}
+[11.305598] (-) TimerEvent: {}
+[11.370376] (audio_common_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libaudio_common_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[11.391354] (audio_common_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/audio_common_msgs/msg/audio_info__type_support.cpp.o\x1b[0m\n'}
+[11.405958] (-) TimerEvent: {}
+[11.484372] (audio_common_msgs) StdoutLine: {'line': b'[ 50%] Built target audio_common_msgs__rosidl_typesupport_cpp\n'}
+[11.506092] (-) TimerEvent: {}
+[11.509248] (audio_common_msgs) StdoutLine: {'line': b'[ 51%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[11.526898] (audio_common_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libaudio_common_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[11.606225] (-) TimerEvent: {}
+[11.638467] (audio_common_msgs) StdoutLine: {'line': b'[ 53%] Built target audio_common_msgs__rosidl_typesupport_c\n'}
+[11.665491] (audio_common_msgs) StdoutLine: {'line': b'[ 55%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[11.706345] (-) TimerEvent: {}
+[11.807444] (-) TimerEvent: {}
+[11.907853] (-) TimerEvent: {}
+[12.009510] (-) TimerEvent: {}
+[12.109930] (-) TimerEvent: {}
+[12.210331] (-) TimerEvent: {}
+[12.311100] (-) TimerEvent: {}
+[12.412249] (-) TimerEvent: {}
+[12.513324] (-) TimerEvent: {}
+[12.613705] (-) TimerEvent: {}
+[12.714124] (-) TimerEvent: {}
+[12.780393] (audio_common_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/audio_common_msgs/msg/detail/dds_fastrtps/audio_data__type_support.cpp.o\x1b[0m\n'}
+[12.814250] (-) TimerEvent: {}
+[12.853341] (audio_common_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/audio_common_msgs/msg/detail/audio_data__type_support_c.cpp.o\x1b[0m\n'}
+[12.915350] (-) TimerEvent: {}
+[13.015779] (-) TimerEvent: {}
+[13.117349] (-) TimerEvent: {}
+[13.217806] (-) TimerEvent: {}
+[13.319120] (-) TimerEvent: {}
+[13.421623] (-) TimerEvent: {}
+[13.522241] (-) TimerEvent: {}
+[13.623352] (-) TimerEvent: {}
+[13.727317] (-) TimerEvent: {}
+[13.829560] (-) TimerEvent: {}
+[13.932578] (-) TimerEvent: {}
+[14.033034] (-) TimerEvent: {}
+[14.135566] (-) TimerEvent: {}
+[14.214439] (audio_common_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/audio_common_msgs/msg/detail/dds_fastrtps/audio_data_stamped__type_support.cpp.o\x1b[0m\n'}
+[14.236341] (-) TimerEvent: {}
+[14.338348] (-) TimerEvent: {}
+[14.438903] (-) TimerEvent: {}
+[14.453229] (audio_common_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/audio_common_msgs/msg/detail/audio_data_stamped__type_support_c.cpp.o\x1b[0m\n'}
+[14.539385] (-) TimerEvent: {}
+[14.645361] (-) TimerEvent: {}
+[14.747495] (-) TimerEvent: {}
+[14.848029] (-) TimerEvent: {}
+[14.950359] (-) TimerEvent: {}
+[15.052678] (-) TimerEvent: {}
+[15.154359] (-) TimerEvent: {}
+[15.254879] (-) TimerEvent: {}
+[15.358351] (-) TimerEvent: {}
+[15.459080] (-) TimerEvent: {}
+[15.560058] (-) TimerEvent: {}
+[15.664581] (-) TimerEvent: {}
+[15.765027] (-) TimerEvent: {}
+[15.819988] (audio_common_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/audio_common_msgs/msg/detail/dds_fastrtps/audio_info__type_support.cpp.o\x1b[0m\n'}
+[15.865531] (-) TimerEvent: {}
+[15.968588] (-) TimerEvent: {}
+[16.072399] (-) TimerEvent: {}
+[16.173697] (-) TimerEvent: {}
+[16.274134] (-) TimerEvent: {}
+[16.376532] (-) TimerEvent: {}
+[16.479510] (-) TimerEvent: {}
+[16.580035] (-) TimerEvent: {}
+[16.683517] (-) TimerEvent: {}
+[16.733424] (audio_common_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/audio_common_msgs/msg/detail/audio_info__type_support_c.cpp.o\x1b[0m\n'}
+[16.785472] (-) TimerEvent: {}
+[16.889429] (-) TimerEvent: {}
+[16.994351] (-) TimerEvent: {}
+[17.095492] (-) TimerEvent: {}
+[17.195943] (-) TimerEvent: {}
+[17.297631] (-) TimerEvent: {}
+[17.399539] (-) TimerEvent: {}
+[17.500098] (-) TimerEvent: {}
+[17.602649] (-) TimerEvent: {}
+[17.658970] (audio_common_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libaudio_common_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[17.703378] (-) TimerEvent: {}
+[17.803838] (-) TimerEvent: {}
+[17.907148] (-) TimerEvent: {}
+[17.959518] (audio_common_msgs) StdoutLine: {'line': b'[ 68%] Built target audio_common_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[17.990339] (audio_common_msgs) StdoutLine: {'line': b'[ 70%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[18.007497] (-) TimerEvent: {}
+[18.110343] (-) TimerEvent: {}
+[18.210781] (-) TimerEvent: {}
+[18.311315] (-) TimerEvent: {}
+[18.413787] (-) TimerEvent: {}
+[18.514381] (-) TimerEvent: {}
+[18.542000] (audio_common_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libaudio_common_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[18.614510] (-) TimerEvent: {}
+[18.714942] (-) TimerEvent: {}
+[18.775825] (audio_common_msgs) StdoutLine: {'line': b'[ 72%] Built target audio_common_msgs__rosidl_typesupport_fastrtps_c\n'}
+[18.815085] (-) TimerEvent: {}
+[18.917552] (-) TimerEvent: {}
+[19.010132] (audio_common_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/audio_common_msgs/msg/detail/audio_data__type_support.cpp.o\x1b[0m\n'}
+[19.012016] (audio_common_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/audio_common_msgs/msg/detail/audio_data_stamped__type_support.cpp.o\x1b[0m\n'}
+[19.018378] (-) TimerEvent: {}
+[19.118771] (-) TimerEvent: {}
+[19.219185] (-) TimerEvent: {}
+[19.320083] (-) TimerEvent: {}
+[19.420745] (-) TimerEvent: {}
+[19.521445] (-) TimerEvent: {}
+[19.623352] (-) TimerEvent: {}
+[19.723791] (-) TimerEvent: {}
+[19.824198] (-) TimerEvent: {}
+[19.926351] (-) TimerEvent: {}
+[20.026757] (-) TimerEvent: {}
+[20.115302] (audio_common_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/audio_common_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/audio_common_msgs/msg/detail/audio_info__type_support.cpp.o\x1b[0m\n'}
+[20.126896] (-) TimerEvent: {}
+[20.229561] (-) TimerEvent: {}
+[20.331351] (-) TimerEvent: {}
+[20.431848] (-) TimerEvent: {}
+[20.534501] (-) TimerEvent: {}
+[20.636296] (-) TimerEvent: {}
+[20.737352] (-) TimerEvent: {}
+[20.837796] (-) TimerEvent: {}
+[20.939556] (-) TimerEvent: {}
+[21.040029] (-) TimerEvent: {}
+[21.077911] (audio_common_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libaudio_common_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[21.140247] (-) TimerEvent: {}
+[21.240647] (-) TimerEvent: {}
+[21.273551] (audio_common_msgs) StdoutLine: {'line': b'[ 79%] Built target audio_common_msgs__rosidl_typesupport_introspection_cpp\n'}
+[21.324065] (audio_common_msgs) StdoutLine: {'line': b'[ 79%] Built target audio_common_msgs\n'}
+[21.340800] (-) TimerEvent: {}
+[21.388474] (audio_common_msgs) StdoutLine: {'line': b'[ 81%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[21.440945] (-) TimerEvent: {}
+[21.541339] (-) TimerEvent: {}
+[21.643488] (-) TimerEvent: {}
+[21.748608] (-) TimerEvent: {}
+[21.850763] (-) TimerEvent: {}
+[21.951200] (-) TimerEvent: {}
+[22.055692] (-) TimerEvent: {}
+[22.158467] (-) TimerEvent: {}
+[22.259326] (-) TimerEvent: {}
+[22.359731] (-) TimerEvent: {}
+[22.460474] (-) TimerEvent: {}
+[22.561342] (-) TimerEvent: {}
+[22.661751] (-) TimerEvent: {}
+[22.762175] (-) TimerEvent: {}
+[22.863351] (-) TimerEvent: {}
+[22.914024] (audio_common_msgs) StdoutLine: {'line': b'[ 81%] Built target audio_common_msgs__py\n'}
+[22.963796] (-) TimerEvent: {}
+[22.969251] (audio_common_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_py.dir/rosidl_generator_py/audio_common_msgs/msg/_audio_data_stamped_s.c.o\x1b[0m\n'}
+[22.974101] (audio_common_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_py.dir/rosidl_generator_py/audio_common_msgs/msg/_audio_data_s.c.o\x1b[0m\n'}
+[23.065312] (-) TimerEvent: {}
+[23.166003] (-) TimerEvent: {}
+[23.266501] (-) TimerEvent: {}
+[23.329620] (audio_common_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/audio_common_msgs__rosidl_generator_py.dir/rosidl_generator_py/audio_common_msgs/msg/_audio_info_s.c.o\x1b[0m\n'}
+[23.366752] (-) TimerEvent: {}
+[23.467155] (-) TimerEvent: {}
+[23.567623] (-) TimerEvent: {}
+[23.668036] (-) TimerEvent: {}
+[23.671021] (audio_common_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking C shared library libaudio_common_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[23.768691] (-) TimerEvent: {}
+[23.786305] (audio_common_msgs) StdoutLine: {'line': b'[ 88%] Built target audio_common_msgs__rosidl_generator_py\n'}
+[23.852045] (audio_common_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/audio_common_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/audio_common_msgs/_audio_common_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[23.852456] (audio_common_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/audio_common_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/audio_common_msgs/_audio_common_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[23.869914] (-) TimerEvent: {}
+[23.971480] (-) TimerEvent: {}
+[24.075832] (-) TimerEvent: {}
+[24.164891] (audio_common_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/audio_common_msgs/audio_common_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[24.176347] (-) TimerEvent: {}
+[24.256170] (audio_common_msgs) StdoutLine: {'line': b'[ 94%] Built target audio_common_msgs_s__rosidl_typesupport_introspection_c\n'}
+[24.278360] (-) TimerEvent: {}
+[24.315369] (audio_common_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/audio_common_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/audio_common_msgs/_audio_common_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[24.318275] (audio_common_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/audio_common_msgs/audio_common_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[24.378489] (-) TimerEvent: {}
+[24.446212] (audio_common_msgs) StdoutLine: {'line': b'[ 98%] Built target audio_common_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[24.478619] (-) TimerEvent: {}
+[24.580673] (-) TimerEvent: {}
+[24.635469] (audio_common_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/audio_common_msgs/audio_common_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[24.680825] (-) TimerEvent: {}
+[24.716436] (audio_common_msgs) StdoutLine: {'line': b'[100%] Built target audio_common_msgs_s__rosidl_typesupport_c\n'}
+[24.745774] (audio_common_msgs) JobEnded: {'identifier': 'audio_common_msgs', 'rc': 'SIGINT'}
+[24.756802] (micro_ros_setup) JobSkipped: {'identifier': 'micro_ros_setup'}
+[24.756896] (my_fake_lidar) JobSkipped: {'identifier': 'my_fake_lidar'}
+[24.756941] (my_path_publisher) JobSkipped: {'identifier': 'my_path_publisher'}
+[24.756978] (my_two_wheel_robot) JobSkipped: {'identifier': 'my_two_wheel_robot'}
+[24.757012] (ros2_kinect_depth) JobSkipped: {'identifier': 'ros2_kinect_depth'}
+[24.757045] (ros2_kinect_led) JobSkipped: {'identifier': 'ros2_kinect_led'}
+[24.757078] (ros2_kinect_rgb) JobSkipped: {'identifier': 'ros2_kinect_rgb'}
+[24.757110] (ros2_kinect_tilt) JobSkipped: {'identifier': 'ros2_kinect_tilt'}
+[24.757142] (twist_converter) JobSkipped: {'identifier': 'twist_converter'}
+[24.757174] (view_robot) JobSkipped: {'identifier': 'view_robot'}
+[24.757206] (audio_common) JobSkipped: {'identifier': 'audio_common'}
+[24.757237] (ros2_kinect_mic_node) JobSkipped: {'identifier': 'ros2_kinect_mic_node'}
+[24.757296] (ros2_tests) JobSkipped: {'identifier': 'ros2_tests'}
+[24.757474] (-) EventReactorShutdown: {}

@@ -1,0 +1,6 @@
+msg/AudioData.idl
+msg/AudioData.msg
+msg/AudioDataStamped.idl
+msg/AudioDataStamped.msg
+msg/AudioInfo.idl
+msg/AudioInfo.msg

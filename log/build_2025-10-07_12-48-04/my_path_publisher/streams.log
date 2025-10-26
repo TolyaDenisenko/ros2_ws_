@@ -1,0 +1,37 @@
+[3.687s] Invoking command in '/home/anatoly/ros2_ws/src/my_path_publisher': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/anatoly/ros2_ws/build/my_path_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anatoly/ros2_ws/install/my_path_publisher/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_path_publisher build --build-base /home/anatoly/ros2_ws/build/my_path_publisher/build install --record /home/anatoly/ros2_ws/build/my_path_publisher/install.log --single-version-externally-managed install_data
+[5.027s] running egg_info
+[5.027s] creating ../../build/my_path_publisher/my_path_publisher.egg-info
+[5.142s] writing ../../build/my_path_publisher/my_path_publisher.egg-info/PKG-INFO
+[5.143s] writing dependency_links to ../../build/my_path_publisher/my_path_publisher.egg-info/dependency_links.txt
+[5.145s] writing entry points to ../../build/my_path_publisher/my_path_publisher.egg-info/entry_points.txt
+[5.146s] writing requirements to ../../build/my_path_publisher/my_path_publisher.egg-info/requires.txt
+[5.148s] writing top-level names to ../../build/my_path_publisher/my_path_publisher.egg-info/top_level.txt
+[5.149s] writing manifest file '../../build/my_path_publisher/my_path_publisher.egg-info/SOURCES.txt'
+[5.357s] reading manifest file '../../build/my_path_publisher/my_path_publisher.egg-info/SOURCES.txt'
+[5.359s] writing manifest file '../../build/my_path_publisher/my_path_publisher.egg-info/SOURCES.txt'
+[5.361s] running build
+[5.364s] running build_py
+[5.365s] creating /home/anatoly/ros2_ws/build/my_path_publisher/build
+[5.365s] creating /home/anatoly/ros2_ws/build/my_path_publisher/build/lib
+[5.365s] creating /home/anatoly/ros2_ws/build/my_path_publisher/build/lib/my_path_publisher
+[5.366s] copying my_path_publisher/__init__.py -> /home/anatoly/ros2_ws/build/my_path_publisher/build/lib/my_path_publisher
+[5.367s] copying my_path_publisher/path_publisher.py -> /home/anatoly/ros2_ws/build/my_path_publisher/build/lib/my_path_publisher
+[5.367s] running install
+[5.380s] running install_lib
+[5.480s] creating /home/anatoly/ros2_ws/install/my_path_publisher/lib/python3.12/site-packages/my_path_publisher
+[5.480s] copying /home/anatoly/ros2_ws/build/my_path_publisher/build/lib/my_path_publisher/__init__.py -> /home/anatoly/ros2_ws/install/my_path_publisher/lib/python3.12/site-packages/my_path_publisher
+[5.480s] copying /home/anatoly/ros2_ws/build/my_path_publisher/build/lib/my_path_publisher/path_publisher.py -> /home/anatoly/ros2_ws/install/my_path_publisher/lib/python3.12/site-packages/my_path_publisher
+[5.483s] byte-compiling /home/anatoly/ros2_ws/install/my_path_publisher/lib/python3.12/site-packages/my_path_publisher/__init__.py to __init__.cpython-312.pyc
+[5.483s] byte-compiling /home/anatoly/ros2_ws/install/my_path_publisher/lib/python3.12/site-packages/my_path_publisher/path_publisher.py to path_publisher.cpython-312.pyc
+[5.485s] running install_data
+[5.486s] creating /home/anatoly/ros2_ws/install/my_path_publisher/share/ament_index
+[5.486s] creating /home/anatoly/ros2_ws/install/my_path_publisher/share/ament_index/resource_index
+[5.486s] creating /home/anatoly/ros2_ws/install/my_path_publisher/share/ament_index/resource_index/packages
+[5.488s] copying resource/my_path_publisher -> /home/anatoly/ros2_ws/install/my_path_publisher/share/ament_index/resource_index/packages
+[5.489s] copying package.xml -> /home/anatoly/ros2_ws/install/my_path_publisher/share/my_path_publisher
+[5.489s] running install_egg_info
+[5.595s] Copying ../../build/my_path_publisher/my_path_publisher.egg-info to /home/anatoly/ros2_ws/install/my_path_publisher/lib/python3.12/site-packages/my_path_publisher-0.0.0-py3.12.egg-info
+[5.598s] running install_scripts
+[6.093s] Installing path_publisher script to /home/anatoly/ros2_ws/install/my_path_publisher/lib/my_path_publisher
+[6.096s] writing list of installed files to '/home/anatoly/ros2_ws/build/my_path_publisher/install.log'
+[6.243s] Invoked command in '/home/anatoly/ros2_ws/src/my_path_publisher' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/anatoly/ros2_ws/build/my_path_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anatoly/ros2_ws/install/my_path_publisher/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_path_publisher build --build-base /home/anatoly/ros2_ws/build/my_path_publisher/build install --record /home/anatoly/ros2_ws/build/my_path_publisher/install.log --single-version-externally-managed install_data

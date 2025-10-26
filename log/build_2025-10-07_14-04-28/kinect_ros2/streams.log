@@ -1,0 +1,29 @@
+[0.039s] Invoking command in '/home/anatoly/ros2_ws/build/kinect_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/anatoly/ros2_ws/build/kinect_ros2 -- -j2 -l2
+[0.114s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.726s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.805s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.832s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.868s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.910s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.099s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.107s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.294s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.505s] -- Found rclcpp_components: 28.1.12 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+[1.596s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.774s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[1.804s] -- Found image_transport: 5.1.7 (/opt/ros/jazzy/share/image_transport/cmake)
+[1.837s] -- Found camera_info_manager: 5.1.7 (/opt/ros/jazzy/share/camera_info_manager/cmake)
+[1.852s] -- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+[1.974s] -- Found tf2_ros: 0.36.14 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[2.551s] -- Configuring done (2.5s)
+[2.592s] -- Generating done (0.0s)
+[2.605s] -- Build files have been written to: /home/anatoly/ros2_ws/build/kinect_ros2
+[2.711s] [ 50%] [32mBuilding CXX object CMakeFiles/kinect_ros2_component.dir/src/kinect_ros2_component.cpp.o[0m
+[4.045s] [01m[K/home/anatoly/ros2_ws/src/kinect_ros2/src/kinect_ros2_component.cpp:221:10:[m[K [01;31m[Kfatal error: [m[Krclcpp_components/register_node_macro.hpp: No such file or directory
+[4.045s]   221 | #include [01;31m[K"rclcpp_components/register_node_macro.hpp"[m[K
+[4.046s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.046s] compilation terminated.
+[4.056s] gmake[2]: *** [CMakeFiles/kinect_ros2_component.dir/build.make:76: CMakeFiles/kinect_ros2_component.dir/src/kinect_ros2_component.cpp.o] Error 1
+[4.056s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/kinect_ros2_component.dir/all] Error 2
+[4.056s] gmake: *** [Makefile:146: all] Error 2
+[4.062s] Invoked command in '/home/anatoly/ros2_ws/build/kinect_ros2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/anatoly/ros2_ws/build/kinect_ros2 -- -j2 -l2

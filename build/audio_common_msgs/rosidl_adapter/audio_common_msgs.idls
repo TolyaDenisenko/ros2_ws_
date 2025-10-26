@@ -1,0 +1,3 @@
+/home/anatoly/ros2_ws/build/audio_common_msgs/rosidl_adapter/audio_common_msgs:msg/AudioData.idl
+/home/anatoly/ros2_ws/build/audio_common_msgs/rosidl_adapter/audio_common_msgs:msg/AudioDataStamped.idl
+/home/anatoly/ros2_ws/build/audio_common_msgs/rosidl_adapter/audio_common_msgs:msg/AudioInfo.idl

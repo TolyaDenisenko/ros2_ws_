@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/my_path_publisher/my_path_publisher.egg-info
+writing ../../build/my_path_publisher/my_path_publisher.egg-info/PKG-INFO
+writing dependency_links to ../../build/my_path_publisher/my_path_publisher.egg-info/dependency_links.txt
+writing entry points to ../../build/my_path_publisher/my_path_publisher.egg-info/entry_points.txt
+writing requirements to ../../build/my_path_publisher/my_path_publisher.egg-info/requires.txt
+writing top-level names to ../../build/my_path_publisher/my_path_publisher.egg-info/top_level.txt
+writing manifest file '../../build/my_path_publisher/my_path_publisher.egg-info/SOURCES.txt'
+reading manifest file '../../build/my_path_publisher/my_path_publisher.egg-info/SOURCES.txt'
+writing manifest file '../../build/my_path_publisher/my_path_publisher.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/anatoly/ros2_ws/build/my_path_publisher/build
+creating /home/anatoly/ros2_ws/build/my_path_publisher/build/lib
+creating /home/anatoly/ros2_ws/build/my_path_publisher/build/lib/my_path_publisher
+copying my_path_publisher/__init__.py -> /home/anatoly/ros2_ws/build/my_path_publisher/build/lib/my_path_publisher
+copying my_path_publisher/path_publisher.py -> /home/anatoly/ros2_ws/build/my_path_publisher/build/lib/my_path_publisher
+running install
+running install_lib
+creating /home/anatoly/ros2_ws/install/my_path_publisher/lib/python3.12/site-packages/my_path_publisher
+copying /home/anatoly/ros2_ws/build/my_path_publisher/build/lib/my_path_publisher/__init__.py -> /home/anatoly/ros2_ws/install/my_path_publisher/lib/python3.12/site-packages/my_path_publisher
+copying /home/anatoly/ros2_ws/build/my_path_publisher/build/lib/my_path_publisher/path_publisher.py -> /home/anatoly/ros2_ws/install/my_path_publisher/lib/python3.12/site-packages/my_path_publisher
+byte-compiling /home/anatoly/ros2_ws/install/my_path_publisher/lib/python3.12/site-packages/my_path_publisher/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/anatoly/ros2_ws/install/my_path_publisher/lib/python3.12/site-packages/my_path_publisher/path_publisher.py to path_publisher.cpython-312.pyc
+running install_data
+creating /home/anatoly/ros2_ws/install/my_path_publisher/share/ament_index
+creating /home/anatoly/ros2_ws/install/my_path_publisher/share/ament_index/resource_index
+creating /home/anatoly/ros2_ws/install/my_path_publisher/share/ament_index/resource_index/packages
+copying resource/my_path_publisher -> /home/anatoly/ros2_ws/install/my_path_publisher/share/ament_index/resource_index/packages
+copying package.xml -> /home/anatoly/ros2_ws/install/my_path_publisher/share/my_path_publisher
+running install_egg_info
+Copying ../../build/my_path_publisher/my_path_publisher.egg-info to /home/anatoly/ros2_ws/install/my_path_publisher/lib/python3.12/site-packages/my_path_publisher-0.0.0-py3.12.egg-info
+running install_scripts
+Installing path_publisher script to /home/anatoly/ros2_ws/install/my_path_publisher/lib/my_path_publisher
+writing list of installed files to '/home/anatoly/ros2_ws/build/my_path_publisher/install.log'

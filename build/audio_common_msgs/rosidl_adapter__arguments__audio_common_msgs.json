@@ -1,0 +1,8 @@
+{
+  "package_name": "audio_common_msgs",
+  "non_idl_tuples": [
+    "/home/anatoly/ros2_ws/src/KinectV1-Ros2/src/audio_common/audio_common_msgs:msg/AudioData.msg",
+    "/home/anatoly/ros2_ws/src/KinectV1-Ros2/src/audio_common/audio_common_msgs:msg/AudioDataStamped.msg",
+    "/home/anatoly/ros2_ws/src/KinectV1-Ros2/src/audio_common/audio_common_msgs:msg/AudioInfo.msg"
+  ]
+}

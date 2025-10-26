@@ -1,0 +1,53 @@
+[0.028s] Invoking command in '/home/anatoly/ros2_ws/build/kinect_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/anatoly/ros2_ws/build/kinect_ros2 -- -j2 -l2
+[0.108s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.746s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.835s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.862s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.898s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.940s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.133s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.137s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.326s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.530s] -- Found rclcpp_components: 28.1.12 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+[1.617s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.796s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[1.827s] -- Found image_transport: 5.1.7 (/opt/ros/jazzy/share/image_transport/cmake)
+[1.859s] -- Found camera_info_manager: 5.1.7 (/opt/ros/jazzy/share/camera_info_manager/cmake)
+[1.870s] -- Setting yaml-cpp_DIR to: '/opt/ros/jazzy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/share/cmake/yaml-cpp'
+[1.985s] -- Found tf2_ros: 0.36.14 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[2.517s] -- Configuring done (2.4s)
+[2.559s] -- Generating done (0.0s)
+[2.572s] -- Build files have been written to: /home/anatoly/ros2_ws/build/kinect_ros2
+[2.702s] [100%] Built target kinect_ros2_component
+[2.733s] Invoked command in '/home/anatoly/ros2_ws/build/kinect_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/anatoly/ros2_ws/build/kinect_ros2 -- -j2 -l2
+[2.760s] Invoking command in '/home/anatoly/ros2_ws/build/kinect_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/anatoly/ros2_ws/build/kinect_ros2
+[2.781s] -- Install configuration: ""
+[2.782s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/lib/kinect_ros2/libkinect_ros2_component.so
+[2.782s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/launch
+[2.784s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/launch/pointcloud.launch.py
+[2.786s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/launch/showimage.launch.py
+[2.786s] -- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/launch/kinect.launch.py
+[2.786s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/cfg
+[2.786s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/cfg/calibration_depth.yaml
+[2.788s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/cfg/calibration_rgb.yaml
+[2.788s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/launch
+[2.788s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/launch/pointcloud.launch.py
+[2.790s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/launch/showimage.launch.py
+[2.790s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/launch/kinect.launch.py
+[2.790s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/ament_index/resource_index/package_run_dependencies/kinect_ros2
+[2.790s] -- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/ament_index/resource_index/parent_prefix_path/kinect_ros2
+[2.790s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/environment/ament_prefix_path.sh
+[2.791s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/environment/ament_prefix_path.dsv
+[2.791s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/environment/path.sh
+[2.791s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/environment/path.dsv
+[2.791s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/local_setup.bash
+[2.791s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/local_setup.sh
+[2.792s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/local_setup.zsh
+[2.793s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/local_setup.dsv
+[2.793s] -- Installing: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/package.dsv
+[2.793s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/ament_index/resource_index/packages/kinect_ros2
+[2.793s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/ament_index/resource_index/rclcpp_components/kinect_ros2
+[2.794s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/cmake/kinect_ros2Config.cmake
+[2.794s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/cmake/kinect_ros2Config-version.cmake
+[2.794s] -- Up-to-date: /home/anatoly/ros2_ws/install/kinect_ros2/share/kinect_ros2/package.xml
+[2.797s] Invoked command in '/home/anatoly/ros2_ws/build/kinect_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/anatoly/ros2_ws/install/twist_converter:/home/anatoly/ros2_ws/install/my_path_publisher:/home/anatoly/ros2_ws/install/my_fake_lidar:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/anatoly/ros2_ws/build/kinect_ros2

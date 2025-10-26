@@ -1,0 +1,91 @@
+[0.000000] (-) TimerEvent: {}
+[0.001717] (esp32_bridge) JobQueued: {'identifier': 'esp32_bridge', 'dependencies': OrderedDict()}
+[0.001815] (hoverboard_driver) JobQueued: {'identifier': 'hoverboard_driver', 'dependencies': OrderedDict()}
+[0.001866] (kinect_ros2) JobQueued: {'identifier': 'kinect_ros2', 'dependencies': OrderedDict()}
+[0.001905] (micro_ros_setup) JobQueued: {'identifier': 'micro_ros_setup', 'dependencies': OrderedDict()}
+[0.001941] (my_fake_lidar) JobQueued: {'identifier': 'my_fake_lidar', 'dependencies': OrderedDict()}
+[0.001976] (my_path_publisher) JobQueued: {'identifier': 'my_path_publisher', 'dependencies': OrderedDict()}
+[0.002008] (my_two_wheel_robot) JobQueued: {'identifier': 'my_two_wheel_robot', 'dependencies': OrderedDict()}
+[0.002040] (twist_converter) JobQueued: {'identifier': 'twist_converter', 'dependencies': OrderedDict()}
+[0.002071] (view_robot) JobQueued: {'identifier': 'view_robot', 'dependencies': OrderedDict()}
+[0.002103] (esp32_bridge) JobStarted: {'identifier': 'esp32_bridge'}
+[0.029693] (hoverboard_driver) JobStarted: {'identifier': 'hoverboard_driver'}
+[0.099496] (-) TimerEvent: {}
+[0.199947] (-) TimerEvent: {}
+[0.300366] (-) TimerEvent: {}
+[0.407789] (-) TimerEvent: {}
+[0.509861] (-) TimerEvent: {}
+[0.610287] (-) TimerEvent: {}
+[0.671677] (hoverboard_driver) JobProgress: {'identifier': 'hoverboard_driver', 'progress': 'cmake'}
+[0.672812] (hoverboard_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/anatoly/ros2_ws/src/hoverboard-driver', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/home/anatoly/ros2_ws/install/hoverboard_driver'], 'cwd': '/home/anatoly/ros2_ws/build/hoverboard_driver', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'anatoly', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/anatoly', 'OLDPWD': '/home/anatoly/ros2_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2168', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'anatoly', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'anatoly', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/anatoly/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/anatoly-Latitude-3340:@/tmp/.ICE-unix/1981,unix/anatoly-Latitude-3340:/tmp/.ICE-unix/1981', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/1b75d01b_aca8_4e89_ae32_a17c9d3547d2', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.1D08D3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.109', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/anatoly/ros2_ws/build/hoverboard_driver', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}), 'shell': False}
+[0.710478] (-) TimerEvent: {}
+[0.776656] (hoverboard_driver) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.777081] (hoverboard_driver) StderrLine: {'line': b'  Compatibility with CMake < 3.5 will be removed from a future version of\n'}
+[0.777308] (hoverboard_driver) StderrLine: {'line': b'  CMake.\n'}
+[0.777488] (hoverboard_driver) StderrLine: {'line': b'\n'}
+[0.777700] (hoverboard_driver) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[0.777886] (hoverboard_driver) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[0.778059] (hoverboard_driver) StderrLine: {'line': b'\n'}
+[0.778226] (hoverboard_driver) StderrLine: {'line': b'\x1b[0m\n'}
+[0.810623] (-) TimerEvent: {}
+[0.911556] (-) TimerEvent: {}
+[1.013879] (-) TimerEvent: {}
+[1.114269] (-) TimerEvent: {}
+[1.216814] (-) TimerEvent: {}
+[1.230719] (hoverboard_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[1.316954] (-) TimerEvent: {}
+[1.418853] (-) TimerEvent: {}
+[1.519647] (-) TimerEvent: {}
+[1.563009] (hoverboard_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.619771] (-) TimerEvent: {}
+[1.621810] (hoverboard_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.719891] (-) TimerEvent: {}
+[1.820709] (-) TimerEvent: {}
+[1.886028] (hoverboard_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.916014] (hoverboard_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.916481] (hoverboard_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.917846] (hoverboard_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.921294] (-) TimerEvent: {}
+[1.946794] (hoverboard_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.021423] (-) TimerEvent: {}
+[2.121830] (-) TimerEvent: {}
+[2.207785] (hoverboard_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.221947] (-) TimerEvent: {}
+[2.238324] (hoverboard_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.239757] (hoverboard_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.241877] (hoverboard_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.309238] (hoverboard_driver) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:6 (find_package):\n'}
+[2.311257] (hoverboard_driver) StderrLine: {'line': b'  By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[2.311585] (hoverboard_driver) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "catkin", but\n'}
+[2.313938] (hoverboard_driver) StderrLine: {'line': b'  CMake did not find one.\n'}
+[2.314155] (hoverboard_driver) StderrLine: {'line': b'\n'}
+[2.314333] (hoverboard_driver) StderrLine: {'line': b'  Could not find a package configuration file provided by "catkin" with any\n'}
+[2.314508] (hoverboard_driver) StderrLine: {'line': b'  of the following names:\n'}
+[2.315869] (hoverboard_driver) StderrLine: {'line': b'\n'}
+[2.316098] (hoverboard_driver) StderrLine: {'line': b'    catkinConfig.cmake\n'}
+[2.316279] (hoverboard_driver) StderrLine: {'line': b'    catkin-config.cmake\n'}
+[2.316453] (hoverboard_driver) StderrLine: {'line': b'\n'}
+[2.316656] (hoverboard_driver) StderrLine: {'line': b'  Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set\n'}
+[2.318937] (hoverboard_driver) StderrLine: {'line': b'  "catkin_DIR" to a directory containing one of the above files.  If "catkin"\n'}
+[2.319137] (hoverboard_driver) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[2.319312] (hoverboard_driver) StderrLine: {'line': b'  installed.\n'}
+[2.319481] (hoverboard_driver) StderrLine: {'line': b'\n'}
+[2.319689] (hoverboard_driver) StderrLine: {'line': b'\x1b[0m\n'}
+[2.319873] (hoverboard_driver) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.322109] (-) TimerEvent: {}
+[2.327790] (hoverboard_driver) CommandEnded: {'returncode': 1}
+[2.391671] (hoverboard_driver) JobEnded: {'identifier': 'hoverboard_driver', 'rc': 1}
+[2.422215] (-) TimerEvent: {}
+[2.522642] (-) TimerEvent: {}
+[2.623033] (-) TimerEvent: {}
+[2.723427] (-) TimerEvent: {}
+[2.825865] (-) TimerEvent: {}
+[2.839747] (esp32_bridge) JobEnded: {'identifier': 'esp32_bridge', 'rc': 'SIGINT'}
+[2.851816] (kinect_ros2) JobSkipped: {'identifier': 'kinect_ros2'}
+[2.851952] (micro_ros_setup) JobSkipped: {'identifier': 'micro_ros_setup'}
+[2.852016] (my_fake_lidar) JobSkipped: {'identifier': 'my_fake_lidar'}
+[2.852068] (my_path_publisher) JobSkipped: {'identifier': 'my_path_publisher'}
+[2.852118] (my_two_wheel_robot) JobSkipped: {'identifier': 'my_two_wheel_robot'}
+[2.852166] (twist_converter) JobSkipped: {'identifier': 'twist_converter'}
+[2.852211] (view_robot) JobSkipped: {'identifier': 'view_robot'}
+[2.852259] (-) EventReactorShutdown: {}
