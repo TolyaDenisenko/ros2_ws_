@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!--
+  Комната 8 × 6 м с «островом» посередине: вокруг него можно объехать
+  по кругу и проверить замыкание петли в SLAM. Несколько предметов
+  мебели делают геометрию несимметричной, чтобы scan matching не путал
+  одинаковые участки.
+-->
+<sdf version="1.9">
+  <world name="room">
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"/>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.9 0.9 0.9 1</diffuse>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <model name="floor">
+      <static>true</static>
+      <link name="link">
+        <collision name="c">
+          <geometry><plane><normal>0 0 1</normal><size>20 20</size></plane></geometry>
+        </collision>
+        <visual name="v">
+          <geometry><plane><normal>0 0 1</normal><size>20 20</size></plane></geometry>
+          <material><diffuse>0.6 0.5 0.4 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Стены и мебель: статические боксы, высота 1 м (выше плоскости лидара) -->
+    <model name="walls">
+      <static>true</static>
+      <link name="link">
+        <!-- внешние стены -->
+        <collision name="north"><pose>0 3 0.5 0 0 0</pose><geometry><box><size>8.1 0.1 1</size></box></geometry></collision>
+        <visual name="north"><pose>0 3 0.5 0 0 0</pose><geometry><box><size>8.1 0.1 1</size></box></geometry></visual>
+        <collision name="south"><pose>0 -3 0.5 0 0 0</pose><geometry><box><size>8.1 0.1 1</size></box></geometry></collision>
+        <visual name="south"><pose>0 -3 0.5 0 0 0</pose><geometry><box><size>8.1 0.1 1</size></box></geometry></visual>
+        <collision name="east"><pose>4 0 0.5 0 0 0</pose><geometry><box><size>0.1 6 1</size></box></geometry></collision>
+        <visual name="east"><pose>4 0 0.5 0 0 0</pose><geometry><box><size>0.1 6 1</size></box></geometry></visual>
+        <collision name="west"><pose>-4 0 0.5 0 0 0</pose><geometry><box><size>0.1 6 1</size></box></geometry></collision>
+        <visual name="west"><pose>-4 0 0.5 0 0 0</pose><geometry><box><size>0.1 6 1</size></box></geometry></visual>
+
+        <!-- остров в центре: объезжать вокруг -->
+        <collision name="island"><pose>0 0 0.5 0 0 0</pose><geometry><box><size>3 1.6 1</size></box></geometry></collision>
+        <visual name="island"><pose>0 0 0.5 0 0 0</pose><geometry><box><size>3 1.6 1</size></box></geometry></visual>
+
+        <!-- шкаф у северной стены -->
+        <collision name="cabinet"><pose>-2.6 2.6 0.5 0 0 0</pose><geometry><box><size>1.2 0.6 1</size></box></geometry></collision>
+        <visual name="cabinet"><pose>-2.6 2.6 0.5 0 0 0</pose><geometry><box><size>1.2 0.6 1</size></box></geometry></visual>
+
+        <!-- выступ на восточной стене -->
+        <collision name="pillar"><pose>3.7 -1.2 0.5 0 0 0</pose><geometry><box><size>0.5 0.5 1</size></box></geometry></collision>
+        <visual name="pillar"><pose>3.7 -1.2 0.5 0 0 0</pose><geometry><box><size>0.5 0.5 1</size></box></geometry></visual>
+
+        <!-- круглый стол -->
+        <collision name="table"><pose>2.3 1.9 0.5 0 0 0</pose><geometry><cylinder><radius>0.35</radius><length>1</length></cylinder></geometry></collision>
+        <visual name="table"><pose>2.3 1.9 0.5 0 0 0</pose><geometry><cylinder><radius>0.35</radius><length>1</length></cylinder></geometry></visual>
+
+        <!-- косой ящик у южной стены -->
+        <collision name="crate"><pose>-1.8 -2.5 0.5 0 0 0.5</pose><geometry><box><size>0.8 0.4 1</size></box></geometry></collision>
+        <visual name="crate"><pose>-1.8 -2.5 0.5 0 0 0.5</pose><geometry><box><size>0.8 0.4 1</size></box></geometry></visual>
+      </link>
+    </model>
+  </world>
+</sdf>

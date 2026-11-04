@@ -1,66 +1,73 @@
-
+# Настройки slam_toolbox для реального робота (esp32_bridge).
+# Совпадают с hoverbot_sim/config/slam_sim.yaml, кроме use_sim_time.
+# Комментарии «было:» — значения из прежней версии, мешавшие замыканию петель.
 slam_toolbox:
   ros__parameters:
+    use_sim_time: false           # реальный робот — системное время
 
-    # Названия фреймов и топика лидара
-    scan_topic: /scan               # Топик с лазерными сканами
-    odom_frame: odom               # Кадр одометрии (обычно "odom")
-    map_frame: map                 # Глобальный фрейм карты
-    base_frame: base_link          # Фрейм робота (лидара)
+    # --- Плагины решателя графа ---
+    solver_plugin: solver_plugins::CeresSolver
+    ceres_linear_solver: SPARSE_NORMAL_CHOLESKY
+    ceres_preconditioner: SCHUR_JACOBI
+    ceres_trust_strategy: LEVENBERG_MARQUARDT
+    ceres_dogleg_type: TRADITIONAL_DOGLEG
+    ceres_loss_function: None
 
-    # Режим работы SLAM Toolbox
-    mode: mapping                  # Режим построения карты (localization — для использования готовой)
+    # --- Кадры и топики (как на реальном роботе) ---
+    odom_frame: odom
+    map_frame: map
+    base_frame: base_link
+    scan_topic: /scan
+    mode: mapping
 
-    # Источники движения
-    use_odometry: true             # Использовать одометрию (false, если она сильно врет)
-    use_scan_matching: true        # Сопоставление сканов — основа SLAM
-    use_scan_barycenter: false     # Использовать геометрический центр скана (обычно false)
+    # --- Общие ---
+    debug_logging: false
+    throttle_scans: 1
+    transform_publish_period: 0.05    # было: 0.01 — лишняя нагрузка
+    map_update_interval: 2.0
+    resolution: 0.05
+    min_laser_range: 0.15
+    max_laser_range: 6.0              # было: 2.5 — слишком мало геометрии для петель
+    minimum_time_interval: 0.2        # было: 0.01
+    transform_timeout: 0.2
+    tf_buffer_duration: 30.0
+    stack_size_to_use: 40000000
+    enable_interactive_mode: true
 
-    # Параметры построения карты
-    resolution: 0.02               # Разрешение карты: размер клетки в метрах
-    max_laser_range: 2.5           # Максимальное расстояние луча лидара (должно совпадать с датчиком)
-    minimum_time_interval: 0.01    # Минимальное время между обработкой сканов
-    transform_publish_period: 0.01 # Как часто публиковать transform map -> odom
+    # --- Когда добавлять новый узел в граф ---
+    use_scan_matching: true
+    use_scan_barycenter: true
+    minimum_travel_distance: 0.2      # было: 0.01 — тысячи шумных узлов
+    minimum_travel_heading: 0.2       # было: 0.02
+    scan_buffer_size: 10
+    scan_buffer_maximum_scan_distance: 10.0
+    link_match_minimum_response_fine: 0.1
+    link_scan_maximum_distance: 1.5
 
-    # Условия добавления новых узлов (ключевых фреймов)
-    minimum_travel_distance: 0.01          # Минимальное смещение робота (м), чтобы добавить узел
-    minimum_travel_heading: 0.02           # Минимальный поворот (рад), чтобы добавить узел
-    temporal_update_distance: 0.0         # [Отключено] автообновление по пройденному расстоянию
-    temporal_update_angle: 0.0            # [Отключено] автообновление по углу
+    # --- Замыкание петель ---
+    do_loop_closing: true
+    loop_search_maximum_distance: 3.0 # было: 12 при дальности 2.5 м
+    loop_match_minimum_chain_size: 10
+    loop_match_maximum_variance_coarse: 3.0
+    loop_match_minimum_response_coarse: 0.35
+    loop_match_minimum_response_fine: 0.45
 
-    # Частота обновления карты и графа
-    occupancy_map_update_frequency: 1.0   # Частота обновления карты (Гц) 1.0
-    optimization_frequency: 1.0           # Частота оптимизации графа (Гц) 1.0
-    optimizer_iterations: 10              # Кол-во итераций оптимизатора за проход
+    # --- Поиск совпадения скана (вокруг позы из одометрии) ---
+    # было: 3.0 м и 2π — поиск игнорировал одометрию и «прыгал» на похожие стены
+    correlation_search_space_dimension: 0.5
+    correlation_search_space_resolution: 0.01
+    correlation_search_space_smear_deviation: 0.1
 
-    # Замыкание петель (Loop Closure)
-    do_loop_closing: true                         # Включить замыкание петель
-    loop_closure_enabled: true                    # Разрешить искать петли
-    loop_closure_frequency: 1.0                   # Частота попыток замыкания петель (Гц)
-    loop_closure_threshold: 4.0                   # Порог оценки совпадения сканов для петли
-    loop_match_max_distance: 8.0                  # Макс. расстояние для поиска петли (м)
-    loop_search_maximum_distance: 12.0            # Радиус поиска совпадений для петель
-    loop_match_minimum_chain_size: 10             # Мин. количество совпадающих сканов в цепочке
-    loop_match_maximum_variance_coverage: 0.2     # Допустимая дисперсия совпадений
+    loop_search_space_dimension: 8.0
+    loop_search_space_resolution: 0.05
+    loop_search_space_smear_deviation: 0.03
 
-    # Расширенный линейный поиск сканов
-    correlation_search_space_dimension: 3.0       # Размер поиска вокруг текущей позиции (м)
-    correlation_search_space_resolution: 0.05     # Шаг линейного поиска (м)
-    correlation_search_space_smear_deviation: 0.03 # Сглаживание в модели совпадения (м)
-
-    # Расширенный угловой поиск сканов
-    angular_search_space_dimension: 6.2832        # Угловой диапазон поиска (рад) — 2π = 360°
-    angular_search_space_resolution: 0.01745      # Шаг углового поиска (~1° в радианах)
-
-    # Параметры расширенного сопоставления сканов
-    use_response_expansion: true          # Расширять область поиска при неудаче
-    match_window_size: 15                 # Размер окна сравнения
-    match_search_size: 15                 # Размер области поиска
-    match_response_threshold: 0.55        # Порог совпадения сканов
-    minimum_score_threshold: 0.45         # Минимальный допуск совпадения
-
-    # Управление памятью
-    max_submaps_to_keep: 20              # Количество подкарт, которые хранятся в графе
-
-    # Сохранение карты
-    serialization_time_interval: -1.0    # Отключить автосохранение (вручную через сервис)
+    # --- Веса и угловой поиск ---
+    distance_variance_penalty: 0.5
+    angle_variance_penalty: 1.0
+    fine_search_angle_offset: 0.00349
+    coarse_search_angle_offset: 0.349
+    coarse_angle_resolution: 0.0349
+    minimum_angle_penalty: 0.9
+    minimum_distance_penalty: 0.5
+    use_response_expansion: true

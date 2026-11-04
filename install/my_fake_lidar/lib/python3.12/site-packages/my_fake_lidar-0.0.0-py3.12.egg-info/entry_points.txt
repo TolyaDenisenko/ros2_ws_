@@ -1,2 +1,0 @@
-[console_scripts]
-fake_lidar = my_fake_lidar.fake_lidar:main
