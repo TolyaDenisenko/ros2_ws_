@@ -18,6 +18,8 @@ colcon test --packages-select esp32_bridge && colcon test-result --verbose   # g
 
 ros2 launch hoverbot_sim mapping.launch.py [gui:=false rviz:=false]   # Gazebo + RViz + slam_toolbox
 ros2 launch esp32_bridge robot.launch.py transport:=udp host:=<ESP IP>  # real robot (or transport:=serial)
+ros2 launch hoverbot_nav sim_navigation.launch.py [gui:=false rviz:=false]            # sim + SLAM + Nav2 + octomap
+ros2 launch hoverbot_nav robot_navigation.launch.py transport:=udp host:=<ESP IP>    # real robot + Nav2 (robot moves!)
 cd firmware/esp32_bridge && pio run -e wifi -e usb                   # build both ESP32 firmwares
                                                                     # (pio: ~/.platformio/penv/bin/pio)
 git submodule update --init   # firmware/hoverboard-firmware-hack-FOC
@@ -48,10 +50,17 @@ git submodule update --init   # firmware/hoverboard-firmware-hack-FOC
   - wheel base: `WHEEL_BASE` (`config.h`) = `wheel_base` param = `wheel_separation` (xacro) = 0.54 m;
   - wheel diameter: `WHEEL_DIAMETER` = 2 × `wheel_radius` = 0.16 m;
   - `HB_BAUD` (`config.h`) = `USART*_BAUD` in the FOC firmware `Inc/config.h`.
+- **Baud caveat:** the FOC submodule defaults to `USART2_BAUD`/`USART3_BAUD` = 115200 with no local edits, while `HB_BAUD` = 1000000. Set the same value on both sides (e.g. `-DUSART2_BAUD=1000000` in the `VARIANT_USART` build flags).
 - **Pin caveat:** the pins in `config.h` were copied from the old firmware (LiDAR 32/33) and look wrong for an ESP32-S3: GPIO 26–37 are flash/PSRAM on most modules. IMU moved to GPIO 8/9 (old 21/22 never worked: S3 has no GPIO 22). Wiring diagram: `firmware/esp32_bridge/PINOUT.md`.
 - **Simulation** `src/hoverbot_sim`:
   - All robot dimensions live in the parameter block at the top of `urdf/hoverbot.urdf.xacro`. Front is the caster side; `base_link` is at the wheel-axle centre.
   - Uses gz DiffDrive (publishes odom + TF `odom→base_link`), a `gpu_lidar` with `gz_frame_id` = `laser`, and an IMU. Topics are bridged by `config/bridge.yaml`.
   - Gazebo DiffDrive keeps executing the last `/cmd_vel` until a new one arrives.
+- **`src/twist_converter`**: standalone node `Twist → TwistStamped` (params `input_topic`, `output_topic`, `frame_id`) for ros2_control's `diff_drive_controller`, which in Jazzy+ accepts only `TwistStamped`. It is not used by the current launch files (bridge and gz DiffDrive take plain `Twist`).
+- **`src/hoverbot_nav`** (Nav2 + octomap, shared by sim and real robot; docs in `docs/NAV2_OCTOMAP.md`, status in `docs/CHECKLIST.md`):
+  - `navigation.launch.py` runs Nav2 nodes (controller/planner/smoother/behaviors/bt_navigator/velocity_smoother) + `scan_to_cloud` + `octomap_server` on top of an already-running SLAM. Wrappers: `sim_navigation.launch.py` (Gazebo + SLAM + Nav2) and `robot_navigation.launch.py` (esp32_bridge + SLAM + Nav2, `use_sim_time:=false`).
+  - No `map_server`/`amcl`: slam_toolbox owns `/map` and `map→odom`. Nav2 publishes plain `Twist` (`enable_stamped_cmd_vel: false`) via `/cmd_vel_nav` → `velocity_smoother` → `/cmd_vel`.
+  - `octomap_server` must keep `latch: True` (transient_local), otherwise the costmap static layer never receives `/projected_map`. Octomap is fed from the 2D scan, so it is a single voxel layer.
+  - Costmap `footprint` (both costmaps in `nav2_params.yaml`) must match the URDF dimensions.
 - **slam_toolbox is a lifecycle node** (Jazzy+). Start it via its own `online_async_launch.py`, as `mapping.launch.py` does; a plain `Node` stays unconfigured and `map` never appears. That launch file defaults to `use_sim_time:=true`, so pass `use_sim_time:=false` on the real robot.
 - SLAM params: `hoverbot_sim/config/slam_sim.yaml` and `esp32_bridge/config/slam_param.yaml` are identical except `use_sim_time`; change them together.

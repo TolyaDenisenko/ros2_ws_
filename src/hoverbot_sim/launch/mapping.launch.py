@@ -31,7 +31,8 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(os.path.join(pkg_share, 'launch', 'sim.launch.py')),
         launch_arguments={
             'gui': LaunchConfiguration('gui'),
-            'rviz_config': os.path.join(pkg_share, 'rviz', 'mapping.rviz'),
+            'rviz': LaunchConfiguration('rviz'),
+            'rviz_config': LaunchConfiguration('rviz_config'),
         }.items(),
     )
 
@@ -52,6 +53,11 @@ def generate_launch_description():
 
     return LaunchDescription([
         DeclareLaunchArgument('gui', default_value='true', description='Окно Gazebo'),
+        DeclareLaunchArgument('rviz', default_value='true', description='Запустить RViz'),
+        DeclareLaunchArgument(
+            'rviz_config',
+            default_value=os.path.join(pkg_share, 'rviz', 'mapping.rviz'),
+            description='Файл конфигурации RViz'),
         DeclareLaunchArgument(
             'slam_params',
             default_value=os.path.join(pkg_share, 'config', 'slam_sim.yaml'),

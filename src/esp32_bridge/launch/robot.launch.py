@@ -49,7 +49,7 @@ def generate_launch_description():
     rviz = Node(
         package='rviz2',
         executable='rviz2',
-        arguments=['-d', os.path.join(pkg_share, 'config', 'rviz.rviz')],
+        arguments=['-d', LaunchConfiguration('rviz_config')],
         condition=IfCondition(LaunchConfiguration('rviz')),
     )
 
@@ -59,6 +59,8 @@ def generate_launch_description():
         DeclareLaunchArgument('device', default_value='/dev/ttyACM0', description='Порт ESP32 (serial)'),
         DeclareLaunchArgument('slam', default_value='true', description='Строить карту'),
         DeclareLaunchArgument('rviz', default_value='true', description='Запустить RViz'),
+        DeclareLaunchArgument('rviz_config', default_value=os.path.join(pkg_share, 'config', 'rviz.rviz'),
+                              description='Файл конфигурации RViz'),
         bridge,
         slam,
         rviz,
